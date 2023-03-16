@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <header>
       <nav className="bg-black shadow">
-        <div className="container mx-auto px-6 py-3 ">
+        <div className="container mx-auto px-6 py-2 ">
           <div className="md:flex md:items-center md:justify-between">
             <div className="flex justify-between items-center">
               <div className="text-xl font-semibold text-gray-700">
@@ -111,7 +111,7 @@ const Header = () => {
               </a>
               <a
                 href="#"
-                className="block ml-4 mt-3 md lg-3 md:mt-0 text-md text-black bg-white capitalize hover:text-white hover:bg-black py-[7px] px-[10px] rounded-3xl border-2 whitespace-nowrap"
+                className="block ml-4 mt-3 md lg-3 md:mt-0 text-md text-black bg-white capitalize hover:text-white hover:bg-black py-[5px] px-[8px] rounded-3xl border-2 whitespace-nowrap w-[115px]"
               >
                 Get in touch
               </a>

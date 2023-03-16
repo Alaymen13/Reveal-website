@@ -10,12 +10,12 @@ function Banner() {
           "url(https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80)",
       }}
     >
-      <div className="flex flex-col items-start justify-center h-full w-full bg-gradient-to-r from-[#5552569d] md:from-[#555256bc] to-transparent bg-opacity-30 container">
+      <div className="flex flex-col items-start justify-center h-full w-full bg-gradient-to-r from-[#5552569d] md:from-[#555256bc] to-[#55525650] md:to-transparent bg-opacity-30 ">
         <div className=" md:text-left text-white md:ml-8 lg:ml-16 container sm:max-w-[80%] md:max-w-[73%] lg:max-w-[58%] p-5">
-          <h3 className="text-[15px] sm:text-1xl md:text-2xl my-4 md:my-5 tracking-wide">
+          <h3 className="text-[15px] sm:text-1xl md:text-2xl my-4 md:my-5 ">
             Dedicated Software Development Team
           </h3>
-          <h1 className="text-2xl sm:text-4xl md:text-5xl  leading-tight text-left tracking-wider">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl  text-left tracking-wider my-4 sm:my-5 md:my-6 md:leading-tight">
             Hire dedicated development team that fits your needs at scale
           </h1>
           <p className="text-sm sm:text-base md:text-lg mt-4 md:mt-6 max-w-lg tracking-wide">
