@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.cdnfonts.com/css/gotham-pro");
+
+body {
+  font-family: "Gotham Pro ", sans-serif;
+}
