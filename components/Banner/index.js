@@ -6,7 +6,7 @@ function Banner() {
       className="w-full bg-cover bg-center h-[55vh] sm:h-[65vh] md:h-[93vh] xl:h-[98vh]"
       style={{
         backgroundImage:
-          "url(https://cdn-cfdja.nitrocdn.com/uOxxxDWjcukgNxoRlWCAPnOZsfFUWQlA/assets/images/optimized/rev-f9b6c16/wp-content/uploads/dedicated-team.jpg)",
+          "url(https://cdn-cfdja.nitrocdn.com/uOxxxDWjcukgNxoRlWCAPnOZsfFUWQlA/assets/images/optimized/rev-cd6b5ea/wp-content/uploads/2021/04/1_375.jpeg)",
       }}
     >
       <div className="flex flex-col items-start justify-center h-full w-full bg-gradient-to-r from-[#4444447a] md:from-[#4444447a] to-[#4444447a] md:to-transparent bg-opacity-30 max-w-[1120px] ">
