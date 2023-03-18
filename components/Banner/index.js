@@ -13,7 +13,7 @@ function Banner() {
           <h3 className="text-[15px] sm:text-1xl md:text-2xl my-4 md:my-5 font-extralight">
             Dedicated Software Development Team
           </h3>
-          <h1 className="text-[2px] sm:text-4xl md:text-[43px] lg:text-[46px] text-left tracking-wider my-4 sm:my-5 md:my-6 md:leading-[52px] font-light">
+          <h1 className="text-[20px] sm:text-4xl md:text-[43px] lg:text-[46px] text-left tracking-wider my-4 sm:my-5 md:my-6 md:leading-[52px] font-light">
             Hire dedicated development team that fits your needs at scale
           </h1>
           <p className="text-sm sm:text-base md:text-lg mt-4 md:mt-6 max-w-lg tracking-wide">
@@ -23,7 +23,7 @@ function Banner() {
           </p>
           <a
             href="#"
-            className="inline-block mt-6 md:mt-8 text-md md:text-lg text-black bg-white capitalize hover:text-white hover:bg-transparent py-2 px-6 md:px-7 rounded-[30px] border-2 border-white  whitespace-nowrap"
+            className="inline-block mt-6 md:mt-8 text-md md:text-lg text-black bg-white capitalize hover:text-white hover:bg-transparent py-2 px-5 md:px-7 rounded-[30px] border-2 border-white  whitespace-nowrap"
           >
             CONTACT US
           </a>

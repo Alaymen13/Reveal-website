@@ -7,7 +7,7 @@ function DedicatedTeam() {
         The dedicated development team model is best suited for
       </div>
       <div
-        className="rounded-2xl h-[100%] mx-8 bg-[#f4eff1] overflow-hidden"
+        className="bgImage rounded-2xl h-[100%] mx-8 bg-[#f4eff1] overflow-hidden"
         style={{
           backgroundImage:
             "url(https://cdn-cfdja.nitrocdn.com/uOxxxDWjcukgNxoRlWCAPnOZsfFUWQlA/assets/images/optimized/rev-cd6b5ea/wp-content/uploads/2021/04/1_375.jpeg)",
@@ -23,7 +23,7 @@ function DedicatedTeam() {
               "linear-gradient(to right, #f1f2eb 50%, transparent 50%)",
           }}
         >
-          <div className=" ml-[1rem] lg:ml-[2rem]  xl:ml-[2rem] 2xl:ml-[3rem] max-w-[374px] py-12">
+          <div className=" ml-[1rem] lg:ml-[2rem]  xl:ml-[2rem] 2xl:ml-[3rem] max-w-[374px] py-12 hide-on-mobile">
             <h3 className=" md:text-3xl my-4 md:my-5 font-semibold ">
               Companies that need to extend expertise
             </h3>
