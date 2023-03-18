@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "Gotham Pro";
   src: url("/public/fonts/GothaProReg.ttf") format("woff"),
     url("/public/fonts/GothaProReg.ttf") format("truetype");
@@ -9,4 +9,4 @@
 body {
   font-family: "Gotham Pro", Helvetica, sans-serif;
   font-weight: 400;
-}
+} */
