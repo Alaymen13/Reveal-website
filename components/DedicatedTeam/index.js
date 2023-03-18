@@ -7,12 +7,12 @@ function DedicatedTeam() {
         The dedicated development team model is best suited for
       </div>
       <div
-        className="rounded-2xls h-[100%] mx-8 bg-[#f4eff1] overflow-hidden"
+        className="rounded-2xl h-[100%] mx-8 bg-[#f4eff1] overflow-hidden"
         style={{
           backgroundImage:
             "url(https://cdn-cfdja.nitrocdn.com/uOxxxDWjcukgNxoRlWCAPnOZsfFUWQlA/assets/images/optimized/rev-cd6b5ea/wp-content/uploads/2021/04/1_375.jpeg)",
           backgroundPosition: "right",
-          backgroundSize: "100% auto",
+          backgroundSize: "50% auto",
           backgroundRepeat: "no-repeat",
         }}
       >
