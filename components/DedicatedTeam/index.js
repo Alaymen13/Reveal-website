@@ -10,7 +10,7 @@ function DedicatedTeam() {
         className="rounded-2xl h-[100%] mx-8 bg-[#f4eff1] overflow-hidden"
         style={{
           backgroundImage:
-            "url(https://cdn-cfdja.nitrocdn.com/uOxxxDWjcukgNxoRlWCAPnOZsfFUWQlA/assets/images/optimized/rev-cd6b5ea/wp-content/uploads/2021/04/1_375.jpeg)",
+            "url(https://cdn-cfdja.nitrocdn.com/uOxxxDWjcukgNxoRlWCAPnOZsfFUWQlA/assets/images/optimized/rev-f9b6c16/wp-content/uploads/dedicated-team.jpg)",
           backgroundPosition: "right",
           backgroundSize: "50% auto",
           backgroundRepeat: "no-repeat",
