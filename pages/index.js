@@ -6,6 +6,7 @@ import Header from "../components/Header";
 import Banner from "../components/Banner";
 import HowWeDiffer from "../components/HowWeDiffer";
 import DedicatedTeam from "../components/DedicatedTeam";
+import ProsOfDedicated from "../components/ProsOfDedicated";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function Home() {
       <Banner />
       <HowWeDiffer />
       <DedicatedTeam />
+      <ProsOfDedicated />
     </>
   );
 }

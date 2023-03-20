@@ -3,7 +3,7 @@ import React from "react";
 function Banner() {
   return (
     <div
-      className="w-full bg-cover bg-center h-[55vh] sm:h-[65vh] md:h-[93vh] xl:h-[98vh] overflow-hidden"
+      className="w-full bg-cover bg-center h-[55vh] sm:h-[65vh] md:h-[93vh] xl:h-[98vh] overflow-hidden mt-12"
       style={{
         backgroundImage: `url(/banner.png)`,
       }}

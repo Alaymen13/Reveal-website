@@ -2,17 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.bgImage {
-}
-
-@media (max-width: 640px) {
-  .bgImage {
-    background-size: 100% auto;
-  }
-}
-
-@media (max-width: 767px) {
-  .hide-on-mobile {
-    display: none;
-  }
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
 }
