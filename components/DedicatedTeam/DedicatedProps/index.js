@@ -17,7 +17,7 @@ function DedicatedProps({ title, des, bgImage, bgColor, gradientColor }) {
             : bgColor === "3"
             ? "bg-[#42aee3]"
             : "bg-[#f6f6f6]"
-        } overflow-hidden py-[100px] md:py-0`}
+        } overflow-hidden py-[100px] lg:pb-[50px] md:py-0`}
         style={{
           backgroundImage: `url(${bgImage})`,
           backgroundPosition: "right",
