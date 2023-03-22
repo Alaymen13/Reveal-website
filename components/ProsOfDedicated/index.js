@@ -10,7 +10,9 @@ function ProsOfDedicated() {
               <div className="text-[33px] md:text-[28px] lg:text-[33px] text-left mt-5 mb-10 font-semibold  leading-tight">
                 Pros of the Dedicated Development Team Model
               </div>
-              <div className="bg-[#5ecefa] h-[3.3px] w-[80%]  mt-[13px] mr-3"></div>
+              <div className="bg-gradient-to-r from-[#273ed8] to-[#2cc1d1] h-[3.4px] md:w-[80%] mt-[13px] mr-3">
+                {" "}
+              </div>
             </div>
           </div>
           <div className="sm:basis-1/3">
@@ -65,12 +67,14 @@ function ProsOfDedicated() {
             </div>
           </div>
         </div>
-        <a
-          href="#"
-          className="inline-block mt-6 md:mt-8 text-md md:text-lg text-black bg-white capitalize hover:text-white hover:bg-black py-2 px-5 md:px-7 rounded-[30px] border-2 border-black  whitespace-nowrap basis-full"
-        >
-          Hire Developers
-        </a>
+        <div className="grid justify-items-center ">
+          <a
+            href="#"
+            className="inline-block mt-6 md:mt-8 text-md md:text-lg text-black bg-white capitalize hover:text-white hover:bg-black py-2 px-5 md:px-7 rounded-[30px] border-2 border-black  whitespace-nowrap basis-full"
+          >
+            Hire Developers
+          </a>
+        </div>
       </div>
     </div>
   );

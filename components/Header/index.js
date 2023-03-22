@@ -111,7 +111,7 @@ const Header = () => {
               </a>
               <a
                 href="#"
-                className="block ml-4 mt-3 md lg-3 md:mt-0 text-sm md:text-md text-black bg-white capitalize hover:text-white hover:bg-black pb-[5px] pt-[4px] px-[8px] rounded-3xl border-2 border-white whitespace-nowrap w-[115px] md:w-[100px]"
+                className="block ml-4 mt-3 md lg-3 md:mt-0 text-sm md:text-md text-black bg-white capitalize hover:text-white hover:bg-black pb-[5px] pt-[4px] px-[8px] rounded-3xl border-2 border-white whitespace-nowrap w-[100px] md:w-[100px]"
               >
                 Get in touch
               </a>
