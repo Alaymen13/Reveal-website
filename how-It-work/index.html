@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+
+    <title>About us - Gun.io</title>
+    <link rel="canonical" href="reveal/about/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="About us - Gun.io" />
+    <meta property="og:url" content="https://" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="apple-mobile-web-app-title" content="Gun.io" />
+    <meta name="application-name" content="Gun.io" />
+    <meta name="msapplication-TileColor" content="#202126" />
+    <meta name="theme-color" content="#202126" />
+    <link
+      rel="stylesheet"
+      id="genesis-custom-blocks__global-styles-css"
+      href="/style.css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      id="app.css-css"
+      href="/howitwork.css"
+      type="text/css"
+      media="all"
+    />
+  </head>
+  <body
+    class="page-template page-template-fullscreen page-template-fullscreen-php page page-id-380 wp-embed-responsive relative bg-[#1a1a1e] text-white"
+  >
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NMQPW3W"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+
+    <a
+      href="#content"
+      class="sr-only focus:bg-[#1a1a1e] focus:p-2 focus:font-medium focus:text-white focus:no-underline focus:absolute focus:top-0.5 focus:left-0.5 focus:not-sr-only focus:z-50"
+    >
+      Skip to main content
+    </a>
+    <header
+      class="relative bg-smoke h-20 lg:h-32 ring-2 ring-black ring-inset"
+      :class="{ 'absolute lg:static inset-0 w-screen h-screen overflow-y-auto z-40': showMobileNav }"
+      x-data="{ showMobileNav: false, screenWidth: window.innerWidth }"
+      x-trap.inert.noscroll="showMobileNav && screenWidth < 1024"
+      @keydown.escape="showMobileNav = false"
+      @resize.window="screenWidth = window.innerWidth"
+    >
+      <div
+        class="flex flex-col h-full lg:container lg:flex-row lg:items-center lg:justify-between ring-0"
+        tabindex="0"
+      >
+        <div class="flex items-center justify-between">
+          <a
+            href="/"
+            class="flex w-64 h-full lg:w-80 lg:h-24 px-4 py-2 ring-inset z-40"
+            rel="home"
+          >
+            <img
+              src="/Image/talentflow2.png"
+              class="w-full h-full"
+              alt="Gun.io"
+            />
+            <span class="sr-only">Home</span>
+          </a>
+          <button
+            class="block lg:hidden w-20 h-20 border-l-2 border-black ring-inset z-40"
+            type="button"
+            aria-controls="nav"
+            :aria-expanded="showMobileNav"
+            @click="showMobileNav = !showMobileNav"
+          >
+            <div
+              aria-hidden="true"
+              class="flex items-center justify-center relative w-6 m-auto"
+            >
+              <span
+                class="absolute bg-white w-full h-0.5 transition -translate-y-2"
+                :class="showMobileNav ? '!translate-y-0 rotate-45' : ''"
+              ></span>
+              <span
+                class="absolute bg-white w-full h-0.5 transition"
+                :class="showMobileNav ? 'opacity-0' : 'opacity-100'"
+              ></span>
+              <span
+                class="absolute bg-white w-full h-0.5 transition translate-y-2"
+                :class="showMobileNav ? '!translate-y-0 -rotate-45' : ''"
+              ></span>
+            </div>
+            <span class="sr-only">Menu</span>
+          </button>
+        </div>
+        <nav
+          aria-label="Main menu"
+          class="hidden bg-black border-y border-black -mt-0.5 lg:flex lg:flex-row lg:gap-4 lg:bg-transparent lg:border-0 lg:mt-0"
+          id="nav"
+          :class="{ 'block': showMobileNav, 'hidden': !showMobileNav }"
+        >
+          <a
+            aria-current="true"
+            href="/about/"
+            class="block bg-smoke border-y border-black w-full font-medium text-white p-4 ring-inset hover:bg-white hover:border-black hover:text-black hover:no-underline lg:w-auto lg:border-2 lg:px-3 lg:py-2 shadow lg:bg-indigo"
+          >
+            About us
+          </a>
+          <a
+            aria-current="false"
+            href="/blog/"
+            class="block bg-smoke border-y border-black w-full font-medium text-white p-4 ring-inset hover:bg-white hover:border-black hover:text-black hover:no-underline lg:w-auto lg:border-2 lg:px-3 lg:py-2 shadow"
+          >
+            Blog
+          </a>
+          <div class="hidden lg:block bg-black w-[2px] h-8 mx-1 m-auto"></div>
+          <a
+            href="/"
+            class="block bg-smoke border-y border-black w-full font-medium text-white p-4 ring-inset hover:bg-white hover:border-black hover:text-black hover:no-underline lg:hidden"
+          >
+            Sign up
+          </a>
+          <a
+            href="/"
+            class="hidden bg-smoke border-y border-black w-full font-medium text-white p-4 ring-inset hover:bg-white hover:border-black hover:text-black hover:no-underline lg:block lg:bg-green lg:text-black lg:w-auto lg:border-2 lg:px-3 lg:py-2"
+          >
+            Get started
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main id="content" class="container">
+      <section class="section section-vet bg-black">
+        <div class="container">
+          <div class="section-header">
+            <span class="title-sm">VETTED TALENT</span>
+            <h3 class="title">
+              We've vetted 1,000's of marketers. <br />Less than 5% impressed
+              us.
+            </h3>
+            <p class="descr">
+              Would you like to be introduced to some of them?
+            </p>
+          </div>
+          <div class="block-steps">
+            <div class="step-row">
+              <div class="info">
+                <h3 class="title">1. Initial application</h3>
+                <p class="descr">
+                  We conduct a professional review where we dive into our
+                  applicants profiles, history, and their track record.
+                </p>
+              </div>
+              <div class="media">
+                <div class="circle">
+                  <svg viewBox="0 0 36 36" class="circular-chart">
+                    <path
+                      class="circle-bg"
+                      d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                    />
+                    <path
+                      class="circle"
+                      stroke-dasharray="10%, 100"
+                      d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                    />
+                  </svg>
+                  <div class="search-icon">
+                    <img
+                      src="https://growthexpert.io/wp-content/uploads/2020/07/a-search.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="text">
+                  <span class="percentage">10%</span>
+                  <span class="percantage-subtitle">of applicants pass</span>
+                </div>
+              </div>
+            </div>
+            <div class="step-row">
+              <div class="info">
+                <h3 class="title">2. Practical Assessment</h3>
+                <p class="descr">
+                  Next, we check for technical knowledge and how they tackle
+                  complex situations through a practical assessment.
+                </p>
+              </div>
+              <div class="media">
+                <div class="circle">
+                  <svg viewBox="0 0 36 36" class="circular-chart">
+                    <path
+                      class="circle-bg"
+                      d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                    />
+                    <path
+                      class="circle"
+                      stroke-dasharray="5%, 100"
+                      d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                    />
+                  </svg>
+                  <div class="search-icon">
+                    <img
+                      src="https://growthexpert.io/wp-content/uploads/2020/07/timeline.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="text">
+                  <span class="percentage">5%</span>
+                  <span class="percantage-subtitle">of applicants pass</span>
+                </div>
+              </div>
+            </div>
+            <div class="step-row">
+              <div class="info">
+                <h3 class="title">3. Final Interview</h3>
+                <p class="descr">
+                  The final stage involves an interview with the founder of
+                  GrowthMentor where past projects and previous work are
+                  discussed in detail.
+                </p>
+              </div>
+              <div class="media">
+                <div class="circle">
+                  <svg viewBox="0 0 36 36" class="circular-chart">
+                    <path
+                      class="circle-bg"
+                      d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                    />
+                    <path
+                      class="circle"
+                      stroke-dasharray="3%, 100"
+                      d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                    />
+                  </svg>
+                  <div class="search-icon">
+                    <img
+                      src="https://growthexpert.io/wp-content/uploads/2020/07/social-distancing.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="text">
+                  <span class="percentage">3%</span>
+                  <span class="percantage-subtitle">of applicants pass</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h2 class="sr-only">World-class technical talent, on tap.</h2>
+      <div class="bg-smoke border-t-2 border-black">
+        <div class="flex flex-col lg:container lg:flex-row justify-between">
+          <div
+            class="flex flex-col border-b-2 border-black gap-4 px-4 lg:px-0 py-8 lg:pr-24 lg:py-16 lg:gap-8 lg:border-b-0 lg:border-r-2"
+          >
+            <a class="w-60 h-18 lg:w-72 lg:h-20" href="/" rel="home">
+              <img
+                src="/Image/talentflow2.png"
+                class="w-full h-full"
+                alt="Gun.io"
+              />
+              <span class="sr-only">Go to Talent Flow homepage</span>
+            </a>
+            <p>World-class technical talent, on tap.</p>
+            <p class="flex divide-x -mx-2">
+              <a href="tel:+16155418095" class="px-2 text-white"
+                >+1 (xxx) xxxx-xxx
+              </a>
+              <a
+                href="mailto:accountmanager@talentflow.com"
+                class="px-2 text-white"
+                ><span class="__cf_email__"
+                  >accountmanager@talentflow.com</span
+                ></a
+              >
+            </p>
+          </div>
+          <nav class="px-4 lg:px-0 py-8 lg:py-16">
+            <ul class="grid gap-8">
+              <li>
+                <h3 class="font-medium mb-2">Company</h3>
+                <ul class="flex flex-col gap-1">
+                  <li>
+                    <a href="/" class="text-white"> About us </a>
+                  </li>
+                  <li>
+                    <a href="/" class="text-white"> Blog </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="bg-smoke border-t-2 border-black">
+        <div
+          class="flex flex-col gap-4 px-4 py-8 lg:container lg:flex-row lg:flex-row-reverse lg:justify-between lg:items-center"
+        >
+          <div class="flex flex-wrap gap-4 text-2xl">
+            <a href="/" class="text-white" rel="me nofollow">
+              <i class="fab fa-twitter fa-fw"></i>
+              <span class="sr-only">Gun.io on Twitter</span>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/company/"
+              class="text-white"
+              rel="me nofollow"
+            >
+              <i class="fab fa-linkedin fa-fw"></i>
+              <span class="sr-only">TalentFlow on LinkedIn</span>
+            </a>
+            <a href="https://github.com/" class="text-white" rel="me nofollow">
+              <i class="fab fa-github fa-fw"></i>
+              <span class="sr-only">TalentFlow on GitHub</span>
+            </a>
+            <a href="" class="text-white" rel="me nofollow">
+              <i class="fab fa-tiktok fa-fw"></i>
+              <span class="sr-only">TalentFlow on YouTube</span>
+            </a>
+          </div>
+          <div class="flex flex-wrap gap-4 text-sm">
+            <span>© 2023 Talent Flow LLC</span>
+            <a href="/" class="text-white"> Privacy policy </a>
+            <a href="/" class="text-white"> Terms of use </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/script.js" id="gun-io-alpine-js"></script>
+    <script
+      src="https://kit.fontawesome.com/4214024a9d.js"
+      id="gun-io-font-awesome-js"
+    ></script>
+  </body>
+</html>

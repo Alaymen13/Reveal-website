@@ -60,18 +60,14 @@
         tabindex="0"
       >
         <div class="flex items-center justify-between">
-         <a
-              class="w-60 h-18 lg:w-72 lg:h-20"
-              href="/"
-              rel="home"
-            >
-              <img
-                src="/Image/talentflow2.png"
-                class="w-full h-full"
-                alt="Gun.io"
-              />
-              <span class="sr-only">Go to Talent Flow homepage</span>
-            </a>
+          <a class="w-60 h-18 lg:w-72 lg:h-20" href="/" rel="home">
+            <img
+              src="/Image/talentflow2.png"
+              class="w-full h-full"
+              alt="Gun.io"
+            />
+            <span class="sr-only">Go to Talent Flow homepage</span>
+          </a>
           <button
             class="block lg:hidden w-20 h-20 border-l-2 border-black ring-inset z-40"
             type="button"
@@ -133,316 +129,8 @@
     </header>
     <main id="content" class="container">
       <div class="py-4 md:py-8 lg:py-12 xl:py-16">
-        <header
-          class="flex flex-col mb-8 lg:flex-row lg:items-center lg:justify-between lg:gap-8"
-        >
-          <div>
-            <h1
-              class="font-semibold leading-tight text-4xl sm:leading-tight sm:text-5xl md:leading-tight md:text-6xl lg:whitespace-nowrap"
-            >
-              Latest articles
-            </h1>
-          </div>
-          <div
-            class="relative flex gap-4 grow sm:grow-0 min-w-2/5 -mx-4 sm:mx-0 my-4 px-4 sm:px-0 overflow-auto"
-            x-data="{
-            isSearching: false,
-            showArchive: false,
-            showSearch: false,
-        }"
-            x-init="
-            if ($refs.active) {
-                $refs.active.scrollIntoView({ block: 'center' })
-
-                // scroll to view focuses the nav so reset focus back to body
-                document.body.tabIndex = 0
-                document.body.focus()
-                document.body.tabIndex = -1
-            }
-        "
-          >
-            <div
-              class="flex gap-4 grow"
-              :class="!isSearching && !showArchive && !showSearch ? 'flex' : 'hidden'"
-            >
-              <a
-                aria-current="true"
-                href="/"
-                class="bg-indigo block border-2 border-black font-medium text-white px-3 py-2 ring-inset whitespace-nowrap hover:bg-white hover:border-smoke hover:text-black hover:no-underline"
-                x-ref="active"
-              >
-                All
-              </a>
-              <a
-                aria-current="false"
-                href="/"
-                class="bg-smoke block border-2 border-black font-medium text-white px-3 py-2 ring-inset whitespace-nowrap hover:bg-white hover:border-smoke hover:text-black hover:no-underline"
-                x-ref=""
-              >
-                Frontier
-              </a>
-              <a
-                aria-current="false"
-                href="/"
-                class="bg-smoke block border-2 border-black font-medium text-white px-3 py-2 ring-inset whitespace-nowrap hover:bg-white hover:border-smoke hover:text-black hover:no-underline"
-                x-ref=""
-              >
-                Guest posts
-              </a>
-              <a
-                aria-current="false"
-                href="/"
-                class="bg-smoke block border-2 border-black font-medium text-white px-3 py-2 ring-inset whitespace-nowrap hover:bg-white hover:border-smoke hover:text-black hover:no-underline"
-                x-ref=""
-              >
-                News
-              </a>
-              <a
-                aria-current="false"
-                href="/"
-                class="bg-smoke block border-2 border-black font-medium text-white px-3 py-2 ring-inset whitespace-nowrap hover:bg-white hover:border-smoke hover:text-black hover:no-underline"
-                x-ref=""
-              >
-                Product updates
-              </a>
-              <a
-                aria-current="false"
-                href="/"
-                class="bg-smoke block border-2 border-black font-medium text-white px-3 py-2 ring-inset whitespace-nowrap hover:bg-white hover:border-smoke hover:text-black hover:no-underline"
-                x-ref=""
-              >
-                Resources
-              </a>
-            </div>
-            <div
-              class="flex gap-4 grow justify-between"
-              :class="showArchive ? 'flex' : 'hidden'"
-            >
-              <div class="flex gap-4 grow">
-                <a
-                  aria-current="false"
-                  href="/"
-                  class="bg-smoke block border-2 border-black font-medium text-white px-3 py-2 ring-inset whitespace-nowrap hover:bg-white hover:border-smoke hover:text-black hover:no-underline"
-                  x-ref=""
-                >
-                  2023
-                </a>
-                <a
-                  aria-current="false"
-                  href="/"
-                  class="bg-smoke block border-2 border-black font-medium text-white px-3 py-2 ring-inset whitespace-nowrap hover:bg-white hover:border-smoke hover:text-black hover:no-underline"
-                  x-ref=""
-                >
-                  2022
-                </a>
-                <a
-                  aria-current="false"
-                  href="/"
-                  class="bg-smoke block border-2 border-black font-medium text-white px-3 py-2 ring-inset whitespace-nowrap hover:bg-white hover:border-smoke hover:text-black hover:no-underline"
-                  x-ref=""
-                >
-                  2021
-                </a>
-                <a
-                  aria-current="false"
-                  href="/"
-                  class="bg-smoke block border-2 border-black font-medium text-white px-3 py-2 ring-inset whitespace-nowrap hover:bg-white hover:border-smoke hover:text-black hover:no-underline"
-                  x-ref=""
-                >
-                  2020
-                </a>
-                <a
-                  aria-current="false"
-                  href="/"
-                  class="bg-smoke block border-2 border-black font-medium text-white px-3 py-2 ring-inset whitespace-nowrap hover:bg-white hover:border-smoke hover:text-black hover:no-underline"
-                  x-ref=""
-                >
-                  2019
-                </a>
-                <a
-                  aria-current="false"
-                  href="/"
-                  class="bg-smoke block border-2 border-black font-medium text-white px-3 py-2 ring-inset whitespace-nowrap hover:bg-white hover:border-smoke hover:text-black hover:no-underline"
-                  x-ref=""
-                >
-                  2018
-                </a>
-                <a
-                  aria-current="false"
-                  href="/"
-                  class="bg-smoke block border-2 border-black font-medium text-white px-3 py-2 ring-inset whitespace-nowrap hover:bg-white hover:border-smoke hover:text-black hover:no-underline"
-                  x-ref=""
-                >
-                  2017
-                </a>
-                <a
-                  aria-current="false"
-                  href="/"
-                  class="bg-smoke block border-2 border-black font-medium text-white px-3 py-2 ring-inset whitespace-nowrap hover:bg-white hover:border-smoke hover:text-black hover:no-underline"
-                  x-ref=""
-                >
-                  2014
-                </a>
-                <a
-                  aria-current="false"
-                  href="/"
-                  class="bg-smoke block border-2 border-black font-medium text-white px-3 py-2 ring-inset whitespace-nowrap hover:bg-white hover:border-smoke hover:text-black hover:no-underline"
-                  x-ref=""
-                >
-                  2012
-                </a>
-              </div>
-              <button
-                aria-label="Close archive menu"
-                class="block bg-smoke border-2 border-black font-medium text-white px-3 py-2 ring-inset hover:bg-white hover:border-smoke hover:text-black hover:no-underline"
-                type="button"
-                @click="showArchive = false"
-              >
-                <i class="fa fa-close fa-fw text-sm"></i>
-              </button>
-            </div>
-            <form
-              action="https://gun.io/search/"
-              class="flex gap-4 grow justify-end"
-              :class="isSearching || showSearch ? 'flex' : 'hidden'"
-              method="get"
-              role="search"
-              @keydown.escape="isSearching = showSearch = false"
-              @submit="$nextTick(() => { showSearch = true })"
-            >
-              <div class="relative flex gap-4 grow">
-                <label class="sr-only" for="search">Search</label>
-                <div
-                  class="absolute border-2 border-transparent font-medium text-white px-3 py-2"
-                >
-                  <i class="fa fa-fw fa-search text-sm"></i>
-                </div>
-                <input
-                  id="search"
-                  x-ref="input"
-                  name="q"
-                  class="bg-smoke border-2 border-black w-full pl-10 pr-2 py-2 focus:ring-2 focus:ring-inset focus:ring-white"
-                  value=""
-                  @focus="$nextTick(() => { showSearch = true })"
-                  @blur="$nextTick(() => { showSearch = false })"
-                />
-                <button
-                  class="block bg-green border-2 border-black font-medium text-black px-3 py-2 ring-inset hover:bg-white hover:border-smoke hover:text-black hover:no-underline"
-                  :class="{ 'hidden': !showSearch }"
-                  type="submit"
-                  @focus="$nextTick(() => { showSearch = true })"
-                  @blur="$nextTick(() => { showSearch = false })"
-                >
-                  Search
-                </button>
-                <button
-                  aria-label="Close search"
-                  class="block bg-smoke border-2 border-black font-medium text-white px-3 py-2 ring-inset hover:bg-white hover:border-smoke hover:text-black hover:no-underline"
-                  type="button"
-                  @click="showSearch = false"
-                  @focus="$nextTick(() => { showSearch = true })"
-                  @blur="$nextTick(() => { showSearch = false })"
-                >
-                  <i class="fa fa-close fa-fw text-sm"></i>
-                </button>
-              </div>
-            </form>
-            <button
-              aria-current="false"
-              aria-label="Archive"
-              class="bg-smoke block bg-smoke border-2 border-black font-medium text-white px-3 py-2 ring-inset hover:bg-white hover:border-smoke hover:text-black hover:no-underline"
-              :class="{ 'hidden': showArchive || showSearch }"
-              type="button"
-              @click="showArchive = !showArchive"
-            >
-              <i class="fa fa-archive fa-fw text-sm"></i>
-            </button>
-            <button
-              aria-current="false"
-              aria-label="Search"
-              class="bg-smoke block bg-smoke border-2 border-black font-medium text-white px-3 py-2 ring-inset hover:bg-white hover:border-smoke hover:text-black hover:no-underline"
-              :class="{ 'hidden': showArchive || showSearch }"
-              type="button"
-              @click="showSearch = true; $nextTick(() => { $refs.input.focus() })"
-              @focus="showSearch = true; $nextTick(() => { $refs.input.focus() })"
-            >
-              <i class="fa fa-fw fa-search text-sm"></i>
-            </button>
-          </div>
-        </header>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-4">
-          <div class="sm:col-span-2 lg:col-span-3">
-            <div class="flex gap-8">
-              <article
-                class="flex flex-col gap-4 md:grid md:grid-cols-2 md:gap-8 post-5079 post type-post status-publish format-standard has-post-thumbnail hentry category-news"
-              >
-                <a
-                  href="https://gun.io/news/2023/03/gun-ios-framework-for-reducing-hiring-risk/"
-                  aria-hidden="true"
-                  class="-mx-4 sm:mx-0"
-                  tabindex="-1"
-                >
-                  <img
-                    src="https://res.cloudinary.com/gun/image/fetch/b_rgb:131417,c_fill,w_600,h_400/https%3A%2F%2Fgun.io%2Fwp-content%2Fuploads%2F2023%2F03%2Fchris-liverani-NDfqqq_7QWM-unsplash-scaled.jpg"
-                    class="block bg-smoke w-full h-full aspect-video object-cover object-center"
-                    alt="Gun.io’s framework for reducing hiring risk"
-                  />
-                </a>
-                <div>
-                  <header>
-                    <div class="flex gap-4 mb-2">
-                      <a href="https://gun.io/news/"> News </a>
-                    </div>
-                    <h2 class="text-3xl font-semibold mb-4">
-                      <a
-                        href="https://gun.io/news/2023/03/gun-ios-framework-for-reducing-hiring-risk/"
-                        class="block"
-                        rel="bookmark"
-                      >
-                        Gun.io’s framework for reducing hiring risk
-                      </a>
-                    </h2>
-                  </header>
-                  <div class="prose text-silver">
-                    Few things slow the velocity of innovation like a lack of
-                    bandwidth and expertise. Oftentimes, the best ideas get put
-                    on the back burner, because committing to them means also
-                    committing to a time and resource-intensive hiring process
-                    (one that runs the risk of not even working out). It’s a
-                    perennial catch-22 that usually ends [&hellip;]
-                  </div>
-                  <footer class="text-silver">
-                    <div class="flex items-center">
-                      <a
-                        href="https://gun.io/author/abbey-charles/"
-                        class="bg-smoke w-12 h-12 overflow-hidden rounded-full"
-                      >
-                        <img
-                          src="https://res.cloudinary.com/gun/image/fetch/c_fill,w_512,h_512/https%3A%2F%2Fapp.gun.io%2Fusers%2Favatar%2Fc5b07865dc91e7aa1db39f3f8882912d%3Fs%3D512%26d%3Dmm%26r%3Dg"
-                          class="bg-smoke w-full h-full object-cover object-center rounded-full"
-                          alt="Abbey Charles"
-                        />
-                      </a>
-                      <div class="p-4">
-                        <a
-                          href="https://gun.io/author/abbey-charles/"
-                          class="text-white"
-                        >
-                          Abbey Charles
-                        </a>
-                        <div class="text-silver">
-                          <time datetime="2023-03-22T10:00:00+00:00">
-                            March 22, 2023</time
-                          >
-                          &middot; 6 min read
-                        </div>
-                      </div>
-                    </div>
-                  </footer>
-                </div>
-              </article>
-            </div>
-          </div>
+          <div class="sm:col-span-2 lg:col-span-3"></div>
           <article
             class="flex flex-col gap-4 post-5065 post type-post status-publish format-standard hentry category-frontier"
           >
@@ -855,420 +543,8 @@
               </footer>
             </div>
           </article>
-          <article
-            class="flex flex-col gap-4 post-4918 post type-post status-publish format-standard hentry category-frontier"
-          >
-            <a
-              href="https://gun.io/frontier/2023/03/season-3-ep-10-the-homebrew-computer-club-with-chris-johnson/"
-              aria-hidden="true"
-              class="-mx-4 sm:mx-0"
-              tabindex="-1"
-            >
-              <img
-                src="https://res.cloudinary.com/gun/image/fetch/b_rgb:131417,c_pad,w_600,h_400/https%3A%2F%2Fi.ytimg.com%2Fvi%2FjTWYxhXZS6E%2Fmaxresdefault.jpg"
-                class="block bg-smoke w-full h-full aspect-video object-cover object-center"
-                alt="Season 3, Ep. 10 &#8211; The Homebrew Computer Club, with Chris Johnson"
-              />
-            </a>
-            <div>
-              <header>
-                <div class="flex gap-4 mb-2">
-                  <a href="https://gun.io/frontier/"> Frontier </a>
-                </div>
-                <h2 class="text-3xl font-semibold mb-4">
-                  <a
-                    href="https://gun.io/frontier/2023/03/season-3-ep-10-the-homebrew-computer-club-with-chris-johnson/"
-                    class="block"
-                    rel="bookmark"
-                  >
-                    Season 3, Ep. 10 &#8211; The Homebrew Computer Club, with
-                    Chris Johnson
-                  </a>
-                </h2>
-              </header>
-              <div class="prose text-silver">
-                When the Homebrew Computer Club met up for the first time in
-                Menlo Park, they had no idea they&#8217;d be so instrumental in
-                spreading awareness and enthusiasm for personal computers. This
-                week, Chris and Faith dive into the history of the club, the
-                inventions that came out of it, and why, as New Yorkers, they
-                [&hellip;]
-              </div>
-              <footer class="text-silver">
-                <div class="flex items-center">
-                  <a
-                    href="https://gun.io/author/faith-benson/"
-                    class="bg-smoke w-12 h-12 overflow-hidden rounded-full"
-                  >
-                    <img
-                      src="https://res.cloudinary.com/gun/image/fetch/c_fill,w_512,h_512/https%3A%2F%2Fapp.gun.io%2Fusers%2Favatar%2F90356af00ed56de05df57c52dc67f4ba%3Fs%3D512%26d%3Dmm%26r%3Dg"
-                      class="bg-smoke w-full h-full object-cover object-center rounded-full"
-                      alt="Faith Benson"
-                    />
-                  </a>
-                  <div class="p-4">
-                    <a
-                      href="https://gun.io/author/faith-benson/"
-                      class="text-white"
-                    >
-                      Faith Benson
-                    </a>
-                    <div class="text-silver">
-                      <time datetime="2023-03-02T14:16:51+00:00">
-                        March 2, 2023</time
-                      >
-                      &middot; 20 min
-                    </div>
-                  </div>
-                </div>
-              </footer>
-            </div>
-          </article>
-          <article
-            class="flex flex-col gap-4 post-4925 post type-post status-publish format-standard has-post-thumbnail hentry category-news"
-          >
-            <a
-              href="https://gun.io/news/2023/03/technical-decision-making-beyond-the-tech-stack/"
-              aria-hidden="true"
-              class="-mx-4 sm:mx-0"
-              tabindex="-1"
-            >
-              <img
-                src="https://res.cloudinary.com/gun/image/fetch/b_rgb:131417,c_fill,w_600,h_400/https%3A%2F%2Fgun.io%2Fwp-content%2Fuploads%2F2023%2F03%2Fdeepmind-ZJKE4XVlKIA-unsplash-scaled.jpg"
-                class="block bg-smoke w-full h-full aspect-video object-cover object-center"
-                alt="Technical decision-making beyond the tech stack"
-              />
-            </a>
-            <div>
-              <header>
-                <div class="flex gap-4 mb-2">
-                  <a href="https://gun.io/news/"> News </a>
-                </div>
-                <h2 class="text-3xl font-semibold mb-4">
-                  <a
-                    href="https://gun.io/news/2023/03/technical-decision-making-beyond-the-tech-stack/"
-                    class="block"
-                    rel="bookmark"
-                  >
-                    Technical decision-making beyond the tech stack
-                  </a>
-                </h2>
-              </header>
-              <div class="prose text-silver">
-                When you think about technical decision-making within your
-                company, how many of those decisions come down to just the stack
-                you’ll be developing with? It turns out there are far more
-                choices you&#8217;ll have to make, and making them early on will
-                help to avoid headaches down the road.
-              </div>
-              <footer class="text-silver">
-                <div class="flex items-center">
-                  <a
-                    href="https://gun.io/author/abbey-charles/"
-                    class="bg-smoke w-12 h-12 overflow-hidden rounded-full"
-                  >
-                    <img
-                      src="https://res.cloudinary.com/gun/image/fetch/c_fill,w_512,h_512/https%3A%2F%2Fapp.gun.io%2Fusers%2Favatar%2Fc5b07865dc91e7aa1db39f3f8882912d%3Fs%3D512%26d%3Dmm%26r%3Dg"
-                      class="bg-smoke w-full h-full object-cover object-center rounded-full"
-                      alt="Abbey Charles"
-                    />
-                  </a>
-                  <div class="p-4">
-                    <a
-                      href="https://gun.io/author/abbey-charles/"
-                      class="text-white"
-                    >
-                      Abbey Charles
-                    </a>
-                    <div class="text-silver">
-                      <time datetime="2023-03-01T14:42:31+00:00">
-                        March 1, 2023</time
-                      >
-                      &middot; 4 min read
-                    </div>
-                  </div>
-                </div>
-              </footer>
-            </div>
-          </article>
-          <article
-            class="flex flex-col gap-4 post-4915 post type-post status-publish format-standard hentry category-frontier"
-          >
-            <a
-              href="https://gun.io/frontier/2023/02/season-3-ep-9-transparency-and-accountability-in-digital-advertising-with-claire-atkin-co-founder-of-checkmyads/"
-              aria-hidden="true"
-              class="-mx-4 sm:mx-0"
-              tabindex="-1"
-            >
-              <img
-                src="https://res.cloudinary.com/gun/image/fetch/b_rgb:131417,c_pad,w_600,h_400/https%3A%2F%2Fi.ytimg.com%2Fvi%2FeO2MUPrRnKw%2Fmaxresdefault.jpg"
-                class="block bg-smoke w-full h-full aspect-video object-cover object-center"
-                alt="Season 3, Ep. 9 &#8211; Transparency and accountability in digital advertising, with Claire Atkin, Co-Founder of CheckMyAds"
-              />
-            </a>
-            <div>
-              <header>
-                <div class="flex gap-4 mb-2">
-                  <a href="https://gun.io/frontier/"> Frontier </a>
-                </div>
-                <h2 class="text-3xl font-semibold mb-4">
-                  <a
-                    href="https://gun.io/frontier/2023/02/season-3-ep-9-transparency-and-accountability-in-digital-advertising-with-claire-atkin-co-founder-of-checkmyads/"
-                    class="block"
-                    rel="bookmark"
-                  >
-                    Season 3, Ep. 9 &#8211; Transparency and accountability in
-                    digital advertising, with Claire Atkin, Co-Founder of
-                    CheckMyAds
-                  </a>
-                </h2>
-              </header>
-              <div class="prose text-silver">
-                The web of digital advertising is wide-spread and many-threaded;
-                when companies use ad tech to promote their products, they
-                don&#8217;t always know what their ads are supporting. This week
-                Faith talks to Claire Atkin, co-founder of CheckMyAds, about how
-                ad tech makes money, ways to tackle big advertising, and how we
-                can all help fight [&hellip;]
-              </div>
-              <footer class="text-silver">
-                <div class="flex items-center">
-                  <a
-                    href="https://gun.io/author/faith-benson/"
-                    class="bg-smoke w-12 h-12 overflow-hidden rounded-full"
-                  >
-                    <img
-                      src="https://res.cloudinary.com/gun/image/fetch/c_fill,w_512,h_512/https%3A%2F%2Fapp.gun.io%2Fusers%2Favatar%2F90356af00ed56de05df57c52dc67f4ba%3Fs%3D512%26d%3Dmm%26r%3Dg"
-                      class="bg-smoke w-full h-full object-cover object-center rounded-full"
-                      alt="Faith Benson"
-                    />
-                  </a>
-                  <div class="p-4">
-                    <a
-                      href="https://gun.io/author/faith-benson/"
-                      class="text-white"
-                    >
-                      Faith Benson
-                    </a>
-                    <div class="text-silver">
-                      <time datetime="2023-02-28T14:51:00+00:00">
-                        February 28, 2023</time
-                      >
-                      &middot; 24 min
-                    </div>
-                  </div>
-                </div>
-              </footer>
-            </div>
-          </article>
-          <article
-            class="flex flex-col gap-4 post-4888 post type-post status-publish format-standard hentry category-news"
-          >
-            <a
-              href="https://gun.io/news/2023/02/season-3-ep-8-twith-the-first-digital-search-warrant-with-jessi-soler/"
-              aria-hidden="true"
-              class="-mx-4 sm:mx-0"
-              tabindex="-1"
-            >
-              <img
-                src="https://res.cloudinary.com/gun/image/fetch/b_rgb:131417,c_pad,w_600,h_400/https%3A%2F%2Fi.ytimg.com%2Fvi%2FMN4hh81gTKU%2Fmaxresdefault.jpg"
-                class="block bg-smoke w-full h-full aspect-video object-cover object-center"
-                alt="Season 3, Ep. 8 &#8211; TWiTH: The first digital search warrant, with Jessi Soler"
-              />
-            </a>
-            <div>
-              <header>
-                <div class="flex gap-4 mb-2">
-                  <a href="https://gun.io/news/"> News </a>
-                </div>
-                <h2 class="text-3xl font-semibold mb-4">
-                  <a
-                    href="https://gun.io/news/2023/02/season-3-ep-8-twith-the-first-digital-search-warrant-with-jessi-soler/"
-                    class="block"
-                    rel="bookmark"
-                  >
-                    Season 3, Ep. 8 &#8211; TWiTH: The first digital search
-                    warrant, with Jessi Soler
-                  </a>
-                </h2>
-              </header>
-              <div class="prose text-silver">
-                Long before we all knew how to use Incognito mode or clear a
-                search history, someone had to be the first person to do
-                something illegal on a computer. And in 1971, that first person
-                was caught after the very first warrant for a computer search
-                was executed. This week, Faith talks with Jessi Soler [&hellip;]
-              </div>
-              <footer class="text-silver">
-                <div class="flex items-center">
-                  <a
-                    href="https://gun.io/author/faith-benson/"
-                    class="bg-smoke w-12 h-12 overflow-hidden rounded-full"
-                  >
-                    <img
-                      src="https://res.cloudinary.com/gun/image/fetch/c_fill,w_512,h_512/https%3A%2F%2Fapp.gun.io%2Fusers%2Favatar%2F90356af00ed56de05df57c52dc67f4ba%3Fs%3D512%26d%3Dmm%26r%3Dg"
-                      class="bg-smoke w-full h-full object-cover object-center rounded-full"
-                      alt="Faith Benson"
-                    />
-                  </a>
-                  <div class="p-4">
-                    <a
-                      href="https://gun.io/author/faith-benson/"
-                      class="text-white"
-                    >
-                      Faith Benson
-                    </a>
-                    <div class="text-silver">
-                      <time datetime="2023-02-23T09:06:54+00:00">
-                        February 23, 2023</time
-                      >
-                      &middot; 15 min read
-                    </div>
-                  </div>
-                </div>
-              </footer>
-            </div>
-          </article>
-          <article
-            class="flex flex-col gap-4 post-4884 post type-post status-publish format-standard hentry category-frontier"
-          >
-            <a
-              href="https://gun.io/frontier/2023/02/season-3-ep-7-conducting-user-research-with-fatima-karwandyar-product-management-leader/"
-              aria-hidden="true"
-              class="-mx-4 sm:mx-0"
-              tabindex="-1"
-            >
-              <img
-                src="https://res.cloudinary.com/gun/image/fetch/b_rgb:131417,c_pad,w_600,h_400/https%3A%2F%2Fi.ytimg.com%2Fvi%2FnsxsJuRflO4%2Fmaxresdefault.jpg"
-                class="block bg-smoke w-full h-full aspect-video object-cover object-center"
-                alt="Season 3, Ep. 7 &#8211; Conducting user research, with Fatima Karwandyar, Product Management Leader"
-              />
-            </a>
-            <div>
-              <header>
-                <div class="flex gap-4 mb-2">
-                  <a href="https://gun.io/frontier/"> Frontier </a>
-                </div>
-                <h2 class="text-3xl font-semibold mb-4">
-                  <a
-                    href="https://gun.io/frontier/2023/02/season-3-ep-7-conducting-user-research-with-fatima-karwandyar-product-management-leader/"
-                    class="block"
-                    rel="bookmark"
-                  >
-                    Season 3, Ep. 7 &#8211; Conducting user research, with
-                    Fatima Karwandyar, Product Management Leader
-                  </a>
-                </h2>
-              </header>
-              <div class="prose text-silver">
-                Understanding your users is the most important step you can take
-                in building product that is used exactly how you want it to be
-                used. In this episode, Faith talks with Product Management
-                leader Fatima Karwandyar about the importance of user testing,
-                getting whole-team buy-in, and iterating until you&#8217;re
-                ready to redefine your users again.
-              </div>
-              <footer class="text-silver">
-                <div class="flex items-center">
-                  <a
-                    href="https://gun.io/author/faith-benson/"
-                    class="bg-smoke w-12 h-12 overflow-hidden rounded-full"
-                  >
-                    <img
-                      src="https://res.cloudinary.com/gun/image/fetch/c_fill,w_512,h_512/https%3A%2F%2Fapp.gun.io%2Fusers%2Favatar%2F90356af00ed56de05df57c52dc67f4ba%3Fs%3D512%26d%3Dmm%26r%3Dg"
-                      class="bg-smoke w-full h-full object-cover object-center rounded-full"
-                      alt="Faith Benson"
-                    />
-                  </a>
-                  <div class="p-4">
-                    <a
-                      href="https://gun.io/author/faith-benson/"
-                      class="text-white"
-                    >
-                      Faith Benson
-                    </a>
-                    <div class="text-silver">
-                      <time datetime="2023-02-21T09:04:50+00:00">
-                        February 21, 2023</time
-                      >
-                      &middot; 25 min
-                    </div>
-                  </div>
-                </div>
-              </footer>
-            </div>
-          </article>
-          <article
-            class="flex flex-col gap-4 post-4875 post type-post status-publish format-standard hentry category-frontier"
-          >
-            <a
-              href="https://gun.io/frontier/2023/02/season-3-ep-6-twith-cbbs-with-regis-camimura-user-experience-engineer/"
-              aria-hidden="true"
-              class="-mx-4 sm:mx-0"
-              tabindex="-1"
-            >
-              <img
-                src="https://res.cloudinary.com/gun/image/fetch/b_rgb:131417,c_pad,w_600,h_400/https%3A%2F%2Fi.ytimg.com%2Fvi%2FP8YPJWGfKzI%2Fmaxresdefault.jpg"
-                class="block bg-smoke w-full h-full aspect-video object-cover object-center"
-                alt="Season 3, Ep. 6 &#8211; TWiTH, CBBS with Regis Camimura, User Experience Engineer"
-              />
-            </a>
-            <div>
-              <header>
-                <div class="flex gap-4 mb-2">
-                  <a href="https://gun.io/frontier/"> Frontier </a>
-                </div>
-                <h2 class="text-3xl font-semibold mb-4">
-                  <a
-                    href="https://gun.io/frontier/2023/02/season-3-ep-6-twith-cbbs-with-regis-camimura-user-experience-engineer/"
-                    class="block"
-                    rel="bookmark"
-                  >
-                    Season 3, Ep. 6 &#8211; TWiTH, CBBS with Regis Camimura,
-                    User Experience Engineer
-                  </a>
-                </h2>
-              </header>
-              <div class="prose text-silver">
-                What did we do before email existed? Coincidentally, this
-                episode answers exactly that question: we used Computer Bulletin
-                Board Systems! In today&#8217;s episode of This Week in Tech
-                History, Regis and Faith talk about what brought CBBSs to
-                fruition, the circumstances that led to its invention, and what
-                kind of plans Regis has to break [&hellip;]
-              </div>
-              <footer class="text-silver">
-                <div class="flex items-center">
-                  <a
-                    href="https://gun.io/author/faith-benson/"
-                    class="bg-smoke w-12 h-12 overflow-hidden rounded-full"
-                  >
-                    <img
-                      src="https://res.cloudinary.com/gun/image/fetch/c_fill,w_512,h_512/https%3A%2F%2Fapp.gun.io%2Fusers%2Favatar%2F90356af00ed56de05df57c52dc67f4ba%3Fs%3D512%26d%3Dmm%26r%3Dg"
-                      class="bg-smoke w-full h-full object-cover object-center rounded-full"
-                      alt="Faith Benson"
-                    />
-                  </a>
-                  <div class="p-4">
-                    <a
-                      href="https://gun.io/author/faith-benson/"
-                      class="text-white"
-                    >
-                      Faith Benson
-                    </a>
-                    <div class="text-silver">
-                      <time datetime="2023-02-16T12:27:11+00:00">
-                        February 16, 2023</time
-                      >
-                      &middot; 23 min
-                    </div>
-                  </div>
-                </div>
-              </footer>
-            </div>
-          </article>
         </div>
-        <div class="flex w-full justify-center">
+        <!-- <div class="flex w-full justify-center">
           <span aria-current="page" class="p-3 sm:px-4 md:px-5 current">1</span>
           <a class="p-3 sm:px-4 md:px-5" href="https://gun.io/blog/page/2/"
             >2</a
@@ -1280,120 +556,49 @@
           <a class="next p-3 sm:px-4 md:px-5" href="https://gun.io/blog/page/2/"
             >></a
           >
-        </div>
+        </div> -->
       </div>
     </main>
+
     <footer>
-      <h2 class="sr-only">Explore Gun.io</h2>
+      <h2 class="sr-only">World-class technical talent, on tap.</h2>
       <div class="bg-smoke border-t-2 border-black">
         <div class="flex flex-col lg:container lg:flex-row justify-between">
           <div
             class="flex flex-col border-b-2 border-black gap-4 px-4 lg:px-0 py-8 lg:pr-24 lg:py-16 lg:gap-8 lg:border-b-0 lg:border-r-2"
           >
-            <a
-              class="w-48 h-18 lg:w-64 lg:h-24"
-              href="https://gun.io/"
-              rel="home"
-            >
+            <a class="w-60 h-18 lg:w-72 lg:h-20" href="/" rel="home">
               <img
-                src="https://gun.io/wp-content/themes/gunio/images/logo-text.svg"
+                src="/Image/talentflow2.png"
                 class="w-full h-full"
                 alt="Gun.io"
               />
-              <span class="sr-only">Go to Gun.io homepage</span>
+              <span class="sr-only">Go to Talent Flow homepage</span>
             </a>
             <p>World-class technical talent, on tap.</p>
             <p class="flex divide-x -mx-2">
               <a href="tel:+16155418095" class="px-2 text-white"
-                >+1 (615) 541-8095</a
-              >
+                >+1 (xxx) xxxx-xxx
+              </a>
               <a
-                href="/cdn-cgi/l/email-protection#7c08191d113c1b0912521513"
+                href="mailto:accountmanager@talentflow.com"
                 class="px-2 text-white"
-                ><span
-                  class="__cf_email__"
-                  data-cfemail="037766626e4364766d2d6a6c"
-                  >[email&#160;protected]</span
+                ><span class="__cf_email__"
+                  >accountmanager@talentflow.com</span
                 ></a
               >
             </p>
           </div>
-          <nav class="px-4 lg:px-0 py-8 lg:py-16">
-            <ul class="grid grid-cols-2 gap-8 md:flex md:gap-24">
-              <li>
-                <h3 class="font-medium mb-2">Platform</h3>
-                <ul class="flex flex-col gap-1">
-                  <li>
-                    <a href="https://app.gun.io/sign-up/" class="text-white">
-                      Find talent
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://gun.io/find-work/" class="text-white">
-                      Find work
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://gun.io/jobs/" class="text-white">
-                      Latest jobs
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://gun.io/faq/" class="text-white"> FAQ </a>
-                  </li>
-                  <li>
-                    <a href="https://gun.io/pricing/" class="text-white">
-                      Pricing
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://gun.io/refer/" class="text-white">
-                      Referrals
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://gun.io/workstyle/" class="text-white">
-                      WorkStyle
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://gun.io/hiring-resources/"
-                      class="text-white"
-                    >
-                      Hiring resources
-                    </a>
-                  </li>
-                </ul>
-              </li>
+          <nav class="px-4 lg:px-0 py-8 lg:py-16 ">
+            <ul class="grid gap-8">
               <li>
                 <h3 class="font-medium mb-2">Company</h3>
                 <ul class="flex flex-col gap-1">
                   <li>
-                    <a href="https://gun.io/about/" class="text-white">
-                      About us
-                    </a>
+                    <a href="/" class="text-white"> About us </a>
                   </li>
                   <li>
-                    <a href="https://gun.io/blog/" class="text-white"> Blog </a>
-                  </li>
-                  <li>
-                    <a href="https://gun.io/wayfarer/" class="text-white">
-                      Newsletter
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://gun.io/frontier/" class="text-white">
-                      Podcast
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://gun.io/press/" class="text-white">
-                      Press
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://gun.io/shop/" class="text-white"> Shop </a>
+                    <a href="/" class="text-white"> Blog </a>
                   </li>
                 </ul>
               </li>
@@ -1406,47 +611,32 @@
           class="flex flex-col gap-4 px-4 py-8 lg:container lg:flex-row lg:flex-row-reverse lg:justify-between lg:items-center"
         >
           <div class="flex flex-wrap gap-4 text-2xl">
-            <a
-              href="https://twitter.com/gundotio"
-              class="text-white"
-              rel="me nofollow"
-            >
+            <a href="/" class="text-white" rel="me nofollow">
               <i class="fab fa-twitter fa-fw"></i>
               <span class="sr-only">Gun.io on Twitter</span>
             </a>
+
             <a
-              href="https://www.youtube.com/channel/UCJ8zmKKMSHNPX0JzH3vGAYw"
-              class="text-white"
-              rel="me nofollow"
-            >
-              <i class="fab fa-youtube fa-fw"></i>
-              <span class="sr-only">Gun.io on YouTube</span>
-            </a>
-            <a
-              href="https://www.linkedin.com/company/gun-io/"
+              href="https://www.linkedin.com/company/"
               class="text-white"
               rel="me nofollow"
             >
               <i class="fab fa-linkedin fa-fw"></i>
-              <span class="sr-only">Gun.io on LinkedIn</span>
+              <span class="sr-only">TalentFlow on LinkedIn</span>
             </a>
-            <a
-              href="https://github.com/gundotio"
-              class="text-white"
-              rel="me nofollow"
-            >
+            <a href="https://github.com/" class="text-white" rel="me nofollow">
               <i class="fab fa-github fa-fw"></i>
-              <span class="sr-only">Gun.io on GitHub</span>
+              <span class="sr-only">TalentFlow on GitHub</span>
+            </a>
+            <a href="" class="text-white" rel="me nofollow">
+              <i class="fab fa-tiktok fa-fw"></i>
+              <span class="sr-only">TalentFlow on YouTube</span>
             </a>
           </div>
           <div class="flex flex-wrap gap-4 text-sm">
-            <span>© 2023 Gun.io</span>
-            <a href="https://gun.io/privacy-policy/" class="text-white">
-              Privacy policy
-            </a>
-            <a href="https://gun.io/terms-of-use/" class="text-white">
-              Terms of use
-            </a>
+            <span>© 2023 Talent Flow LLC</span>
+            <a href="/" class="text-white"> Privacy policy </a>
+            <a href="/" class="text-white"> Terms of use </a>
           </div>
         </div>
       </div>
