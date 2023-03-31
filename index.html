@@ -110,40 +110,46 @@
           </button>
         </div>
         <nav
-          aria-label="Main menu"
-          class="hidden bg-black border-y border-black -mt-0.5 lg:flex lg:flex-row lg:gap-4 lg:bg-transparent lg:border-0 lg:mt-0"
-          id="nav"
-          :class="{ 'block': showMobileNav, 'hidden': !showMobileNav }"
+        aria-label="Main menu"
+        class="hidden bg-black border-y border-black -mt-0.5 lg:flex lg:flex-row lg:gap-4 lg:bg-transparent lg:border-0 lg:mt-0"
+        id="nav"
+        :class="{ 'block': showMobileNav, 'hidden': !showMobileNav }"
+      >
+        <a
+          aria-current="true"
+          href="/how-it-work/"
+          class="block bg-smoke border-y border-black w-full font-medium text-white p-4 ring-inset hover:bg-indigo-500 hover:border-black hover:text-white hover:no-underline lg:w-auto lg:border-2 lg:px-3 lg:py-2 shadow"
         >
-          <a
-            aria-current="false"
-            href="/about/"
-            class="block bg-smoke border-y border-black w-full font-medium text-white p-4 ring-inset hover:bg-white hover:border-black hover:text-black hover:no-underline lg:w-auto lg:border-2 lg:px-3 lg:py-2 shadow"
-          >
-            About us
-          </a>
-          <a
-            aria-current="false"
-            href="/blog/"
-            class="block bg-smoke border-y border-black w-full font-medium text-white p-4 ring-inset hover:bg-white hover:border-black hover:text-black hover:no-underline lg:w-auto lg:border-2 lg:px-3 lg:py-2 shadow"
-          >
-            Blog
-          </a>
-          <div class="hidden lg:block bg-black w-[2px] h-8 mx-1 m-auto"></div>
-
-          <a
-            href="/"
-            class="block bg-smoke border-y border-black w-full font-medium text-white p-4 ring-inset hover:bg-white hover:border-black hover:text-black hover:no-underline lg:hidden"
-          >
-            Sign up
-          </a>
-          <a
-            href="/"
-            class="hidden bg-smoke border-y border-black w-full font-medium text-white p-4 ring-inset hover:bg-white hover:border-black hover:text-black hover:no-underline lg:block lg:bg-green lg:text-black lg:w-auto lg:border-2 lg:px-3 lg:py-2"
-          >
-            Get started
-          </a>
-        </nav>
+          How it work
+        </a>
+        <a
+          aria-current="true"
+          href="/about/"
+          class="block bg-smoke border-y border-black w-full font-medium text-white p-4 ring-inset hover:bg-indigo-500 hover:border-black hover:text-white hover:no-underline lg:w-auto lg:border-2 lg:px-3 lg:py-2 shadow"
+        >
+          About us
+        </a>
+        <a
+          aria-current="false"
+          href="/blog/"
+          class="block bg-smoke border-y border-black w-full font-medium text-white p-4 ring-inset hover:bg-indigo-500 hover:border-black hover:text-white hover:no-underline lg:w-auto lg:border-2 lg:px-3 lg:py-2 shadow"
+        >
+          Blog
+        </a>
+        <div class="hidden lg:block bg-black w-[2px] h-8 mx-1 m-auto"></div>
+        <a
+          href="/"
+          class="block bg-smoke border-y border-black w-full font-medium text-white p-4 ring-inset hover:bg-white hover:border-black hover:text-black hover:no-underline lg:hidden"
+        >
+          Sign up
+        </a>
+        <a
+          href="/"
+          class="hidden bg-smoke border-y border-black w-full font-medium text-white p-4 ring-inset hover:bg-indigo-500 hover:border-black hover:text-white hover:no-underline lg:block lg:bg-green lg:text-black lg:w-auto lg:border-2 lg:px-3 lg:py-2"
+        >
+          Get started
+        </a>
+      </nav>
       </div>
     </header>
     <main id="content" class="container">
@@ -172,7 +178,8 @@ by tapping a global network of qualified and affordable software developers.
               <div class="flex flex-row flex-wrap gap-4 sm:gap-6 mt-auto">
                 <a
                   href="/"
-                  class="bg-green border-green text-black border-2 px-3 py-2 font-medium text-base sm:text-lg md:text-xl !no-underline whitespace-nowrap hover:bg-white hover:border-white hover:text-black"
+                  class="bg-green border-green text-black border-2 px-3 py-2 font-medium text-base sm:text-lg md:text-xl !no-underline whitespace-nowrap hover:bg-indigo-500 hover:border-indigo-500 hover:text-white"
+                  
                 >
                   Find talent</a
                 >
@@ -268,7 +275,7 @@ by tapping a global network of qualified and affordable software developers.
               <div class="flex flex-row flex-wrap gap-4 sm:gap-6 mt-auto">
                 <a
                   href="/"
-                  class="bg-green border-green text-black border-2 px-3 py-2 font-medium text-base sm:text-lg md:text-xl !no-underline whitespace-nowrap hover:bg-white hover:border-white hover:text-black"
+                  class="bg-green border-green text-black border-2 px-3 py-2 font-medium text-base sm:text-lg md:text-xl !no-underline whitespace-nowrap hover:bg-indigo-500 hover:border-indigo-500 hover:text-white"
                 >
                   Request candidates</a
                 >
@@ -340,7 +347,7 @@ by tapping a global network of qualified and affordable software developers.
             </div>
           </div>
           <div
-            class="bg-[url('/wp-content/themes/gunio/images/network.png')] bg-cover sm:bg-contain sm:bg-center bg-no-repeat grid gap-4 xl:grid-cols-12 xl:gap-16 -mx-4 sm:mx-0 px-4 sm:px-0 my-16 lg:my-32 xl:my-64 last:mb-16"
+            class="bg-[url('/wp-content/themes/gunio/images/network.png')] bg-cover sm:bg-contain sm:bg-center bg-no-repeat grid gap-4 xl:grid-cols-12 xl:gap-16 -mx-4 sm:mx-0 px-4 sm:px-0 my-16 lg:my-32 xl:my-48 last:mb-16"
           >
             <div class="xl:col-span-9">
               <div class="grid gap-4 mb-4 not-prose">
@@ -390,7 +397,7 @@ by tapping a global network of qualified and affordable software developers.
               <div class="flex flex-row flex-wrap gap-4 sm:gap-6 mt-auto">
                 <a
                   href="/"
-                  class="bg-green border-green text-black border-2 px-3 py-2 font-medium text-base sm:text-lg md:text-xl !no-underline whitespace-nowrap hover:bg-white hover:border-white hover:text-black"
+                  class="bg-green border-green text-black border-2 px-3 py-2 font-medium text-base sm:text-lg md:text-xl !no-underline whitespace-nowrap hover:bg-indigo-500 hover:border-indigo-500 hover:text-white"
                 >
                   Start hire now</a
                 >
@@ -398,7 +405,7 @@ by tapping a global network of qualified and affordable software developers.
             </div>
           </div>
           <div
-            class="grid gap-4 lg:grid-cols-12 lg:gap-16 my-16 lg:my-32 xl:my-64 last:mb-16 first:mt-0"
+            class="grid gap-4 lg:grid-cols-12 lg:gap-16 my-16 lg:my-32 xl:my-48 last:mb-16 first:mt-0"
           >
             <div class="max-w-prose lg:col-span-7">
               <div class="grid gap-4 mb-4 not-prose">
@@ -421,7 +428,7 @@ by tapping a global network of qualified and affordable software developers.
               <div class="flex flex-row flex-wrap gap-4 sm:gap-6 mt-auto">
                 <a
                   href="/"
-                  class="bg-green border-green text-black border-2 px-3 py-2 font-medium text-base sm:text-lg md:text-xl !no-underline whitespace-nowrap hover:bg-white hover:border-white hover:text-black"
+                  class="bg-green border-green text-black border-2 px-3 py-2 font-medium text-base sm:text-lg md:text-xl !no-underline whitespace-nowrap hover:bg-indigo-500 hover:border-indigo-500 hover:text-white"
                 >
                   Join us as an employers</a
                 >
@@ -439,7 +446,7 @@ by tapping a global network of qualified and affordable software developers.
             </div>
           </div>
           <div
-            class="grid gap-4 xl:grid-cols-12 xl:gap-16 my-16 lg:my-32 xl:my-64 last:mb-16"
+            class="grid gap-4 xl:grid-cols-12 xl:gap-16 my-16 lg:my-32 xl:my-48 last:mb-16"
           >
             <div class="xl:col-span-9">
               <div class="grid gap-4 mb-4 not-prose">
@@ -638,7 +645,7 @@ by tapping a global network of qualified and affordable software developers.
             </div>
           </div> -->
           <div
-            class="grid gap-4 lg:grid-cols-12 lg:gap-16 my-16 lg:my-32 xl:my-64 last:mb-16 first:mt-0"
+            class="grid gap-4 lg:grid-cols-12 lg:gap-16 my-16 lg:my-32 xl:my-48 last:mb-16 first:mt-0"
           >
             <div class="max-w-prose lg:col-span-7">
               <div class="grid gap-4 mb-4 not-prose">
@@ -680,7 +687,7 @@ by tapping a global network of qualified and affordable software developers.
         </div>
           <!-- FAQ Section -->
 
-    <div id="faq" class="grid gap-4 lg:grid-cols-12 lg:gap-16 last:mb-16 my-4 first:mt-0"></div>
+    <div id="faq" class="grid gap-4 lg:grid-cols-12 lg:gap-16 last:mb-16 my-2 first:mt-0"></div>
       <div class=" ">
         <div class="">
           <div
@@ -699,10 +706,10 @@ by tapping a global network of qualified and affordable software developers.
           <div class="mt-14 text-[10px] px-0 justify-left ">
             <div class="transition p">
               <div
-                class="accordion-header cursor-pointer transition flex space-x-5 px-1 items-center h-16"
+                class="accordion-header cursor-pointer transition flex space-x-5 px-1 items-center h-16 xl:h-12"
               >
                 <i class="fas fa-plus text-orange-400"></i>
-                <div class="text-white  font-semibold text-sm sm:text-base md:text-xl">
+                <div class="text-white  text-lg sm:text-base md:text-xl">
 What services does MediaEcho offer?                </div>
               </div>
               <div
@@ -720,12 +727,12 @@ What services does MediaEcho offer?                </div>
                 </div>
               </div>
             </div>
-            <div class="transition py-2 sm:py-0">
+            <div class="transition  sm:py-0">
               <div
-                class="accordion-header cursor-pointer transition flex space-x-5 px-1 items-center h-16"
+                class="accordion-header cursor-pointer transition flex space-x-5 px-1 items-center h-16 xl:h-12"
               >
                 <i class="fas fa-plus text-orange-400"></i>
-                <div class="text-white font-semibold text-sm sm:text-base md:text-xl">
+                <div class="text-white text-lg sm:text-base md:text-xl">
                  How does MediaEcho target audiences
                 </div>
               </div>
@@ -744,12 +751,12 @@ What services does MediaEcho offer?                </div>
                 </div>
               </div>
             </div>
-            <div class="transition py-2 sm:py-0">
+            <div class="transition  sm:py-0">
               <div
-                class="accordion-header cursor-pointer transition flex space-x-5 px-1 items-center h-16"
+                class="accordion-header cursor-pointer transition flex space-x-5 px-1 items-center h-16 xl:h-12"
               >
                 <i class="fas fa-plus text-orange-400"></i>
-                <div class="text-white font-semibold text-sm sm:text-base md:text-xl">
+                <div class="text-white text-lg sm:text-base md:text-xl">
                  How does MediaEcho target audiences
                 </div>
               </div>
@@ -768,12 +775,12 @@ What services does MediaEcho offer?                </div>
                 </div>
               </div>
             </div>
-            <div class="transition py-2 sm:py-0">
+            <div class="transition  sm:py-0">
               <div
-                class="accordion-header cursor-pointer transition flex space-x-5 px-1 items-center h-16"
+                class="accordion-header cursor-pointer transition flex space-x-5 px-1 items-center h-16 xl:h-12"
               >
                 <i class="fas fa-plus text-orange-400"></i>
-                <div class="text-white font-semibold text-sm sm:text-base md:text-xl">
+                <div class="text-white text-lg sm:text-base md:text-xl">
                  How does MediaEcho target audiences
                 </div>
               </div>
@@ -792,12 +799,12 @@ What services does MediaEcho offer?                </div>
                 </div>
               </div>
             </div>
-            <div class="transition py-2 sm:py-0">
+            <div class="transition  sm:py-0 xl:h-12">
               <div
                 class="accordion-header cursor-pointer transition flex space-x-5 px-1 items-center h-16"
               >
                 <i class="fas fa-plus text-orange-400"></i>
-                <div class="text-white font-semibold text-sm sm:text-base md:text-xl">
+                <div class="text-white text-lg sm:text-base md:text-xl">
                  How does MediaEcho target audiences
                 </div>
               </div>
@@ -816,7 +823,6 @@ What services does MediaEcho offer?                </div>
                 </div>
               </div>
             </div>
-            
           </div>
         </div>
       </div>
@@ -900,7 +906,7 @@ What services does MediaEcho offer?                </div>
               >
             </p>
           </div>
-          <nav class="px-4 lg:px-0 py-8 lg:py-16 ">
+          <nav class="px-4 lg:px-0 py-8 lg:py-20 ">
             <ul class="grid gap-8 ">
               <li>
                 <h3 class="font-medium mb-2">Company</h3>
@@ -962,7 +968,7 @@ What services does MediaEcho offer?                </div>
           </div>
           <div class="flex flex-wrap gap-4 text-sm">
             <span>© 2023 Talent Flow LLC</span>
-            <a href="/" class="text-white">
+            <a href="/privacy-policy/" class="text-white">
               Privacy policy
             </a>
             <a href="/" class="text-white">
