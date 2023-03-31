@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+
+    <title>Talent Flow LLC | Qualified technical talent, on tap</title>
+    <meta
+      name="description"
+      content="The simplest way to hire world-class developers. Meet candidates expertly vetted and matched to you by a team of senior engineers."
+    />
+    <meta
+      property="og:title"
+      content="Talent Flow LLC | Qualified technical talent, on tap"
+    />
+    <meta
+      property="og:description"
+      content="The simplest way to hire world-class developers. Meet candidates expertly vetted and matched to you by a team of senior engineers."
+    />
+    <meta property="og:url" content="https://" />
+    <meta property="og:site_name" content="TalentFlow" />
+
+    <link
+      rel="stylesheet"
+      id="genesis-custom-blocks__global-styles-css"
+      href="/style.css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+  </head>
+  <body
+    class="page-template page-template-fullscreen page-template-fullscreen-php page page-id-380 wp-embed-responsive relative bg-[#1a1a1e] text-white"
+  >
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NMQPW3W"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+
+    <a
+      href="#content"
+      class="sr-only focus:bg-[#1a1a1e] focus:p-2 focus:font-medium focus:text-white focus:no-underline focus:absolute focus:top-0.5 focus:left-0.5 focus:not-sr-only focus:z-50"
+    >
+      Skip to main content
+    </a>
+    <header
+      class="relative bg-smoke h-20 lg:h-32 ring-2 ring-black ring-inset"
+      :class="{ 'absolute lg:static inset-0 w-screen h-screen overflow-y-auto z-40': showMobileNav }"
+      x-data="{ showMobileNav: false, screenWidth: window.innerWidth }"
+      x-trap.inert.noscroll="showMobileNav && screenWidth < 1024"
+      @keydown.escape="showMobileNav = false"
+      @resize.window="screenWidth = window.innerWidth"
+    >
+      <div
+        class="flex flex-col h-full lg:container lg:flex-row lg:items-center lg:justify-between ring-0"
+        tabindex="0"
+      >
+        <div class="flex items-center justify-between">
+          <a
+            href="/"
+            class="flex w-64 h-full lg:w-80 lg:h-24 px-4 py-2 ring-inset z-40"
+            rel="home"
+          >
+            <img
+              src="/Image/talentflow2.png"
+              class="w-full h-full"
+              alt="Gun.io"
+            />
+            <span class="sr-only">Home</span>
+          </a>
+          <button
+            class="block lg:hidden w-20 h-20 border-l-2 border-black ring-inset z-40"
+            type="button"
+            aria-controls="nav"
+            :aria-expanded="showMobileNav"
+            @click="showMobileNav = !showMobileNav"
+          >
+            <div
+              aria-hidden="true"
+              class="flex items-center justify-center relative w-6 m-auto"
+            >
+              <span
+                class="absolute bg-white w-full h-0.5 transition -translate-y-2"
+                :class="showMobileNav ? '!translate-y-0 rotate-45' : ''"
+              ></span>
+              <span
+                class="absolute bg-white w-full h-0.5 transition"
+                :class="showMobileNav ? 'opacity-0' : 'opacity-100'"
+              ></span>
+              <span
+                class="absolute bg-white w-full h-0.5 transition translate-y-2"
+                :class="showMobileNav ? '!translate-y-0 -rotate-45' : ''"
+              ></span>
+            </div>
+            <span class="sr-only">Menu</span>
+          </button>
+        </div>
+        <nav
+          aria-label="Main menu"
+          class="hidden bg-black border-y border-black -mt-0.5 lg:flex lg:flex-row lg:gap-4 lg:bg-transparent lg:border-0 lg:mt-0"
+          id="nav"
+          :class="{ 'block': showMobileNav, 'hidden': !showMobileNav }"
+        >
+          <a
+            aria-current="true"
+            href="/how-it-work/"
+            class="block bg-smoke border-y border-black w-full font-medium text-white p-4 ring-inset hover:bg-indigo-500 hover:border-black hover:text-white hover:no-underline lg:w-auto lg:border-2 lg:px-3 lg:py-2 shadow"
+          >
+            How it work
+          </a>
+          <a
+            aria-current="true"
+            href="/about/"
+            class="block bg-smoke border-y border-black w-full font-medium text-white p-4 ring-inset hover:bg-indigo-500 hover:border-black hover:text-white hover:no-underline lg:w-auto lg:border-2 lg:px-3 lg:py-2 shadow"
+          >
+            About us
+          </a>
+          <a
+            aria-current="false"
+            href="/blog/"
+            class="block bg-smoke border-y border-black w-full font-medium text-white p-4 ring-inset hover:bg-indigo-500 hover:border-black hover:text-white hover:no-underline lg:w-auto lg:border-2 lg:px-3 lg:py-2 shadow"
+          >
+            Blog
+          </a>
+          <div class="hidden lg:block bg-black w-[2px] h-8 mx-1 m-auto"></div>
+          <a
+            href="/"
+            class="block bg-smoke border-y border-black w-full font-medium text-white p-4 ring-inset hover:bg-white hover:border-black hover:text-black hover:no-underline lg:hidden"
+          >
+            Sign up
+          </a>
+          <a
+            href="/"
+            class="hidden bg-smoke border-y border-black w-full font-medium text-white p-4 ring-inset hover:bg-indigo-500 hover:border-black hover:text-white hover:no-underline lg:block lg:bg-green lg:text-black lg:w-auto lg:border-2 lg:px-3 lg:py-2"
+          >
+            Get started
+          </a>
+        </nav>
+      </div>
+    </header>
+   
+    <main id="content" class="container">
+      <article class="py-4 md:py-8 lg:py-12 xl:py-16 post-627 page type-page status-publish hentry">
+      <header class="max-w-3xl mx-auto mb-8">
+      <h1 class="font-semibold leading-tight text-4xl sm:leading-tight sm:text-5xl md:leading-tight md:text-6xl">
+      Terms of use </h1>
+      </header>
+      <div class="max-w-3xl mx-auto prose text-lg leading-relaxed sm:text-xl sm:leading-relaxed">
+      <p><strong>Last updated:</strong> MARCH 30, 2023</p>
+      <p> These Terms of Use form a legal agreement entered into by and between you, the user of the public portions of this website, getTalentFlow.com (the “Site”), and any organization on behalf of which you are using or accessing this website, and getTalentFlow.com LLC (also referred to herein as “we,” “us,” and “our”). By using or accessing the Site, and/or by clicking “I Agree” to accept or agree to these Terms of Use when this option is made available to you, you signify your agreement to these Terms of Use as well as our  <a href="/terms-of-use/">Privacy Policy</a>, which is LLC herein by reference.</p>
+      <h2 class="wp-block-heading">1. TERMS</h2>
+      <p>These Terms of Use apply to your access to and use of the public portions of the Site and do not alter in any way the terms and conditions of any other agreement you may have with us for products, services or otherwise, unless otherwise agreed to by us in writing.</p>
+      <p><strong>PLEASE READ THESE TERMS OF USE CAREFULLY. BY USING OR ACCESSING THE SITE, YOU ACCEPT AND AGREE TO BE BOUND BY THESE TERMS OF USE AND ALL APPLICABLE LAWS AND REGULATIONS, INCLUDING YOUR COMPLIANCE WITH ANY APPLICABLE LOCAL LAWS. IF YOU DO NOT AGREE WITH THESE TERMS OF USE, YOU SHALL NOT USE OR ACCESS THE SITE.</strong></p>
+      <h2 class="wp-block-heading">2. ELIGIBILITY</h2>
+      <p>THIS SITE IS OFFERED AND AVAILABLE TO USERS WHO ARE 16 YEARS OF AGE OR OLDER. YOU MAY NOT USE OR ACCESS THE SITE IF YOU (A) DO NOT AGREE TO THESE TERMS OF USE, (B) ARE NOT AT LEAST 13 YEARS OF AGE, OR (C) ARE PROHIBITED FROM ACCESSING OR USING THE SITE BY APPLICABLE LAW.</p>
+      <h2 class="wp-block-heading">3. SITE OWNERSHIP AND INTELLECTUAL PROPERTY</h2>
+      <p>The Site as well as its contents, features, functionality (including but not limited to all information, software, text, displays, images, video, and audio, and the design, selection, and arrangement thereof), and all information, products, and services offered by us to you in connection with the Site (collectively, the “Content”) are protected under applicable copyrights, trademarks, and other proprietary (including but not limited to intellectual property) rights pursuant to international conventions and U.S. and other laws. The Site and the Content are the property of getTalentFlow.com LLC and/or the applicable third-party licensors, and all right, title, and interest in and to the Site and the Content will remain with getTalentFlow.com LLC or such third-party licensors. Our logos, page headers, custom graphics, and other icons are service marks, trademarks, registered service marks, or registered trademarks of getTalentFlow.com ILLC All other products, names, and company logos mentioned on the Site or in the Content are trademarks of their respective owners.</p>
+      <p>These Terms of Use permit you to use the Site exclusively for your personal and other non-commercial use. You do not acquire ownership rights to the Site or any Content, other than those rights in the materials that you submit to us or otherwise enter through the Site, if any, that you may have or any rights that we may specifically grant you in writing, such as the limited license to use the Site, as further described below. These Terms of Use do not grant you any right, title, interest, license (express or implied) to any patent, trademark, service mark, copyright, trade secret or other intellectual property right of the Company or the respective intellectual property owners.</p>
+      <p>You will abide by any and all additional copyright notices, information, or restrictions contained in any Content. You will not modify, adapt, translate, reverse engineer, decompile, or disassemble the Site or any Content. You may only use the Site and the Content as expressly permitted herein, and any other use is prohibited. Any copying, republication, or redistribution of the foregoing, including by caching, framing, or similar means, is expressly prohibited without the prior written consent of getTalentFlow.com LLC and/or the respective intellectual property rights holder identified in the subject content, which consent may be granted or withheld at the sole discretion of the rights holder. Except as expressly authorized by us, you agree not to sell, license, rent, modify, distribute, copy, reproduce, transmit, publicly display, publicly perform, publish, adapt, edit, or create derivative works from the Content or the Site.</p>
+      <p>We accommodate and do not interfere with standard technical measures used by copyright owners to protect their materials. Pursuant to 17 U.S.C. Section 512 as amended by Title II of the Digital Millennium Copyright Act, we reserve the right to terminate your use of the Site or the information and content contained therein if we determine in our sole and absolute discretion that you are involved in infringing activity, regardless of whether such alleged infringement is a first-time or repeat occurrence and/or whether the material or activity is ultimately determined to be infringing.</p>
+      <h2 class="wp-block-heading">4. FEEDBACK</h2>
+      <p>If you provide us with comments, bug reports, feedback, or modifications proposed by you to us, about the Site or the Content (collectively, “Feedback”), we will have the right to use such Feedback at our discretion, including but not limited to incorporating such Feedback into the Site and the right to assign, license or otherwise use such Feedback. You hereby give us a perpetual, irrevocable, non-exclusive license under all rights necessary to incorporate such Feedback and use such Feedback for any purpose. No compensation will be paid with respect to the use of your Feedback.</p>
+      <h2 class="wp-block-heading">5. PROHIBITED USES</h2>
+      <p>You agree to use the Site only for lawful purposes and in accordance with these Terms of Use. Specifically, you agree:</p>
+      <ul><li>that you will not use the Site in any way that violates federal, state, local, or international law or regulation (including any laws or regulations regarding the export of data or software to and from the United States or other countries);</li><li>that you will not use the Site to transmit or send unsolicited commercial communications;</li><li>that you will not attempt to gain unauthorized access to, interfere with, damage, disrupt, or circumvent any of the security features of the Site (or the servers, networks, and databases connected to the Site);</li><li>that you will not access (or attempt to access) the Site through any robot, spider, or other automated means (including use of scripts or web crawlers);</li><li>that you will not “screen scrape”, “monitor”, “mine”, “copy”, or “mirror” the Site;</li><li>that you will not conduct any systematic or automated data collection activities (including without limitation scraping, data mining, data extraction and data harvesting) on or in relation to the Site without our express written consent;</li><li>that you will not engage in any activity that interferes with, disrupts, or imposes an unreasonable or disproportionately large load on the Site (or the servers, networks, and databases which are connected to the Site);</li><li>that you will not engage in any activity that interferes with, disrupts, or imposes an unreasonable or disproportionately large load on the Site (or the servers, networks, and databases which are connected to the Site);</li><li>that you will not use the Site to copy, store, host, transmit, send, use, publish, or distribute any material which consists of (or is linked to) any spyware, virus, Trojan horse, worm, keystroke logger, rootkit or other malicious computer software;</li><li>that you will not edit, modify, correct, adapt, translate, enhance, or otherwise prepare derivative works any content on the Site that is not owned by you or another person or entity for whom you act as their agent;</li><li>that you will not reproduce, redistribute, republish, duplicate, copy, display, sell, rent, sub-license, trade or resell any content or other aspect of the Site for any commercial purpose (except for content specifically and expressly made available for redistribution);</li><li>that you will not remove, delete, efface, alter, obscure, translate, combine, supplement, or otherwise change any trademarks, copyrights, warranties, disclaimers, or other proprietary notations from the Site;</li><li>that you will not impersonate or attempt to impersonate us, our employees, another user, or any other person or entity (including, without limitation, by using e-mail addresses associated with any of the foregoing);</li><li>that you will not forge headers or otherwise manipulate identifiers in order to disguise the origin of any content transmitted through the Site or develop restricted or password-only access pages, or hidden pages or images; and</li><li>that you are solely responsible for (and that we have no responsibility to you or to any third party for) any breach of your obligations under these Terms of Use and for the consequences (including any loss or damage which you may suffer) of any such breach.</li></ul>
+      <p>Any use of the Site or the Content not expressly permitted by these Terms of Use is a breach of these Terms of Use and may violate copyright, trademark, and other laws.</p>
+      <h2 class="wp-block-heading">6. INFORMATION ABOUT YOU AND YOUR VISITS TO THE SITE</h2>
+      <p>Personal information we collect via the Site when we are responsible for determining the purposes and means of the processing of such personal information is subject to our Privacy Policy. By using the Site, you consent to all actions taken by us with respect to your information in compliance with the Privacy Policy. <a href="/terms-of-use/">Privacy Policy</a>. By using the Site, you consent to all actions taken by us with respect to your information in compliance with the Privacy Policy.</p>
+      <h2 class="wp-block-heading">7. RELIANCE ON INFORMATION POSTED</h2>
+      <p>The information presented on or through the Site, including the Content, is made available solely for general information purposes. We use reasonable efforts to update the information on the Site, and the contents of the Site are subject to change without notice. We do not warrant the accuracy, completeness, or usefulness of this information. Any reliance you place on such information is strictly at your own risk. We disclaim all liability and responsibility arising from any reliance placed on such materials by you or any other visitor to the Site.</p>
+      <p>This Site may include content provided by third parties. All statements and/or opinions expressed in these materials, and all content other than the content provided by us, are solely the opinions and the responsibility of the person or entity providing those materials. These materials do not necessarily reflect our opinion. We are not responsible, or liable to you or any third party, for the content or accuracy of any materials provided by any third parties.</p>
+      <p>If you have questions about the information presented on the Site, please contact us using the information provided in “Contact Information” at the end of these Terms of Use.</p>
+      <h2 class="wp-block-heading">8. LINKING TO THE SITE AND SOCIAL MEDIA FEATURES</h2>
+      <p>You may link to the Site’s homepage, provided you do so in a way that is fair and legal; but, you must not establish a link in such a way as to suggest any form of association, approval or endorsement on our part without our express written consent.</p>
+      <p>This Site may provide certain social media features that enable you to: (a) link from your own or certain third-party websites to certain content on this Site; (b) send e-mails or other communications with certain content, or links to certain content, on this Site; and/or (c) cause limited portions of content on this Site to be displayed or appear to be displayed on your own or certain third-party websites. You may use these features solely as they are provided by us and solely with respect to the content they are displayed with. Subject to the foregoing, you must not: (a) establish a link from any website that is not owned by you; (b) cause the Site or portions of it to be displayed, or appear to be displayed by, for example, framing, deep linking or in-line linking, on any other site; (c) link to any part of the Site other than the homepage; or (d) otherwise take any action with respect to the materials on the Site that is inconsistent with any other provision of these Terms of Use.</p>
+      <p>You agree to cooperate with us in causing any unauthorized framing or linking immediately to cease. We reserve the right to withdraw linking permission without notice.</p>
+      <p>We may disable all or any social media features and any links at any time without notice in our discretion.</p>
+      <h2 class="wp-block-heading">9. WARRANTIES AND DISCLAIMERS</h2>
+      <p>a. YOUR USE OF THE SITE, THE CONTENT, OR MATERIALS OBTAINED THROUGH THEM IS AT YOUR OWN RISK. THE SITE AND THE CONTENT ARE PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS. TALENTFLOW LLC HEREBY DISCLAIMS ALL WARRANTIES OF ANY KIND, WHETHER EXPRESSED OR IMPLIED, STATUTORY, OR OTHERWISE. NEITHER TALENTFLOW LLC NOR ANY PERSON ASSOCIATED WITH TALENTFLOW LLC MAKES ANY WARRANTY OR REPRESENTATION WITH RESPECT TO THE COMPLETENESS, SECURITY, RELIABILITY, QUALITY, ACCURACY, OR AVAILABILITY OF THE SITE OR THE CONTENT, OR THE MERCHANTABILITY, NON-INFRINGEMENT, FITNESS FOR PARTICULAR PURPOSE, OR OTHERWISE RELATING TO THE SITE OR THE CONTENT. THE FOREGOING DOES NOT AFFECT ANY WARRANTIES THAT CANNOT BE EXCLUDED OR LIMITED UNDER APPLICABLE LAW. b. YOU UNDERSTAND THAT WE CANNOT AND DO NOT GUARANTEE OR WARRANT THAT FILES AVAILABLE FOR DOWNLOADING FROM THE INTERNET OR THE SITE WILL BE FREE OF VIRUSES OR OTHER DESTRUCTIVE CODE. YOU ARE RESPONSIBLE FOR IMPLEMENTING SUFFICIENT PROCEDURES AND CHECKPOINTS TO SATISFY YOUR PARTICULAR REQUIREMENTS FOR ANTI-VIRUS PROTECTION AND ACCURACY OF DATA INPUT AND OUTPUT, AND FOR MAINTAINING A MEANS EXTERNAL TO OUR SITE FOR ANY RECONSTRUCTION OF ANY LOST DATA. c. TO THE FULLEST EXTENT PROVIDED BY LAW, WE WILL NOT BE LIABLE FOR ANY LOSS OR DAMAGE CAUSED BY A DISTRIBUTED DENIAL-OF-SERVICE ATTACK, RANSOMWARE, VIRUSES, OR OTHER TECHNOLOGICALLY HARMFUL MATERIAL THAT MAY INFECT YOUR COMPUTER EQUIPMENT, COMPUTER PROGRAMS, DATA, OR OTHER PROPRIETARY MATERIAL DUE TO YOUR USE OF THE SITE OR ANY SERVICES OR ITEMS OBTAINED THROUGH THE SITE OR TO YOUR DOWNLOADING OF ANY CONTENT POSTED ON IT, OR ON ANY SITE LINKED TO IT.</p>
+      <h2 class="wp-block-heading">10. LIMITATION OF LIABILITY</h2>
+      <p>TO THE FULLEST EXTENT PERMITTED BY LAW, IN NO EVENT SHALL TALENTFLOW LLC OR ANY OF ITS EMPLOYEES, AGENTS, OFFICERS, OR DIRECTORS BE LIABLE FOR DAMAGES OF ANY KIND, UNDER ANY LEGAL THEORY, ARISING OUT OF OR IN CONNECTION WITH THE SITE, THE CONTENT, OR ANY USE OR INABILITY TO USE ANY OF THE FOREGOING, INCLUDING BUT NOT LIMITED TO, PERSONAL INJURY, LOSS OF PROFITS, BUSINESS INTERRUPTION, LOSS OF USE, LOSS OF GOODWILL, OR LOSS OF DATA, WHETHER OR NOT CAUSED BY TORT (INCLUDING NEGLIGENCE), BREACH OF CONTRACT, OR OTHERWISE, EVEN IF FORESEEABLE.</p>
+      <p>THE FOREGOING DOES NOT AFFECT ANY LIABILITY WHICH CANNOT BE EXCLUDED OR LIMITED UNDER APPLICABLE LAW.</p>
+      <h2 class="wp-block-heading">11. REVISIONS AND ERRATA</h2>
+      <p>We reserve the right to modify or discontinue the Site at any time with or without notice to you. We do not guarantee continuous, uninterrupted or secure access to the Site. The operation of the Site may be interfered with or adversely affected by numerous factors or circumstances outside of our control or through acts of God.</p>
+      <p>The Content and the Site could include technical, typographical, or photographic errors. We do not warrant that any of the Site or the Content are accurate, complete, or current. We do not make any commitment to update the Site or the Content.</p>
+      <h2 class="wp-block-heading">12. LINKS FROM THE SITE</h2>
+      <p>This Site contains links to other Internet sites that our business partners and other third parties own or operate. These links are provided for your convenience only. Your use of each of those sites is subject to the terms of use, if any, that each of those sites have posted.</p>
+      <p>We have not reviewed all the sites linked to the Site, and we are not responsible for any changes to or content on them. We have no control over the content of those sites or resources, and we accept no responsibility for them or for any loss or damage that may arise from your use of them. If you decide to access any of the third-party websites linked to this Site, you do so entirely at your own risk and subject to the terms and conditions of use for such websites. Our inclusion of any content is not an endorsement of that material or linked site or the companies that own or operate the material or linked sites.</p>
+      <h2 class="wp-block-heading">13. GOVERNING LAW AND VENUE</h2>
+      <p>All matters relating to the Site, the Content, or these Terms of Use, and any dispute or claim arising therefrom or related thereto (in each case, including non-contractual disputes or claims) shall be governed by and construed in accordance with the internal laws of the State of Tennessee without giving effect to any choice or conflict of law provision or rule.</p>
+      <p>The courts having jurisdiction over the State of Tennessee, County of Davidson shall have exclusive jurisdiction over all disputes arising in connection with these Terms of Use, and the place of performance of these Terms of Use is agreed by you to be the State of Tennessee, County of Davidson.</p>
+      <h2 class="wp-block-heading">14. WAIVER AND SEVERABILITY</h2>
+      <p>No waiver by us of any term or condition set out in these Terms of Use shall be deemed a further or continuing waiver of such term or condition or a waiver of any other term or condition, and any failure by us to assert a right or provision under these Terms of Use shall not constitute a waiver of such right or provision.</p>
+      <p>If any provision of these Terms of Use is held by a court or other tribunal of competent jurisdiction to be invalid, illegal, or unenforceable for any reason, such provision shall be eliminated or limited to the minimum extent such that the remaining provisions of the Terms of Use will continue in full force and effect.</p>
+      <h2 class="wp-block-heading">15. INDEMNIFICATION</h2>
+      <p>You agree to indemnify, defend, and hold harmless TalentFlow LLC and its successors and assigns and all of their respective officers, directors, agents, employees, and affiliates from and against any claims, liabilities, damages, judgments, awards, losses, obligations, costs, expenses or fees (including reasonable attorneys’ fees) arising out of or relating to (i) your breach of these Terms of Use; (ii) your violation of any third party’s right, including, without limitation, any copyright, property right, or privacy right; or (iii) any claim that content provided by you caused damage or loss to a third party. This defense and indemnification obligation will survive your use of the Site and any termination of this Agreement. </p>
+      <h2 class="wp-block-heading">16. TERMS OF USE MAY CHANGE</h2>
+      <p>We may modify these Terms of Use from time to time in our sole discretion. We will provide notice by, at a minimum, updating this posting. You are expected to carefully review these Terms of Use from time to time so you are aware of any changes. However, if we make material changes to these Terms of Use, we will notify you either through the email address you have provided us or by means of a prominent notice on the Site before the change becomes effective. Any changes to these Terms of Use will be in effect as of the “Last Updated” date referenced at the top of these Terms of Use. Your continued use of the Site constitutes your binding acceptance to these Terms of Use, including any changes or modifications that we may make. If any part of these Terms or any future changes to these Terms are not acceptable to you, you must not use or access the Site.</p>
+      <h2 class="wp-block-heading">17. ENTIRE AGREEMENT</h2>
+      <p>Unless you have entered into another agreement with us, these Terms of Use, together with any documents expressly referred to in them, including our <a href="/terms-of-use/">Privacy Policy</a>, constitute the sole and entire agreement between you and us with respect to the Site and Content. However, these Terms of Use do not supersede or amend any other agreement you have with TalentFlow LLC.</p>
+      <h2 class="wp-block-heading">18. CONTACT INFORMATION</h2>
+      <p>All feedback, comments, requests for technical support, and other communications relating to the Site should be directed to  <a href="info@gettalentflow.com"></a>.</p>
+      </div>
+      </article>
+      </main>
+  
+    <footer>
+      <h2 class="sr-only">World-class technical talent, on tap.</h2>
+      <div class="bg-smoke border-t-2 border-black">
+        <div class="flex flex-col lg:container lg:flex-row justify-between">
+          <div
+            class="flex flex-col border-b-2 border-black gap-4 px-4 lg:px-0 py-8 lg:pr-24 lg:py-16 lg:gap-8 lg:border-b-0 lg:border-r-2"
+          >
+            <a class="w-60 h-18 lg:w-72 lg:h-20" href="/" rel="home">
+              <img
+                src="/Image/talentflow2.png"
+                class="w-full h-full"
+                alt="Gun.io"
+              />
+              <span class="sr-only">Go to Talent Flow homepage</span>
+            </a>
+            <p>World-class technical talent, on tap.</p>
+            <p class="flex divide-x -mx-2">
+              <a href="tel:+16155418095" class="px-2 text-white"
+                >+1 (xxx) xxxx-xxx
+              </a>
+              <a
+              href="mailto:sales@gettalentflow.com"
+             
+              class="px-2 text-white"
+              ><span
+                class="__cf_email__"
+                >sales@gettalentflow.com</span
+              ></a
+            >
+            </p>
+          </div>
+          <nav class="px-4 lg:px-0 py-8 lg:py-24">
+            <ul class="grid gap-8">
+              <li>
+                <h3 class="font-medium mb-2">Company</h3>
+                <ul class="flex flex-col gap-1">
+                  <li>
+                    <a href="/how-it-work/" class="text-white"> How it work </a>
+                  </li>
+                  <li>
+                    <a href="/about/" class="text-white"> About us </a>
+                  </li>
+                  <li>
+                    <a href="/blog/" class="text-white"> Blog </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="bg-smoke border-t-2 border-black">
+        <div
+          class="flex flex-col gap-4 px-4 py-8 lg:container lg:flex-row lg:flex-row-reverse lg:justify-between lg:items-center"
+        >
+          <div class="flex flex-wrap gap-4 text-2xl">
+            <a href="/" class="text-white" rel="me nofollow">
+              <i class="fab fa-twitter fa-fw"></i>
+              <span class="sr-only">TalentFlow on Twitter</span>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/company/"
+              class="text-white"
+              rel="me nofollow"
+            >
+              <i class="fab fa-linkedin fa-fw"></i>
+              <span class="sr-only">TalentFlow on LinkedIn</span>
+            </a>
+            <a href="https://github.com/" class="text-white" rel="me nofollow">
+              <i class="fab fa-github fa-fw"></i>
+              <span class="sr-only">TalentFlow on GitHub</span>
+            </a>
+            <a href="" class="text-white" rel="me nofollow">
+              <i class="fab fa-tiktok fa-fw"></i>
+              <span class="sr-only">TalentFlow on YouTube</span>
+            </a>
+          </div>
+          <div class="flex flex-wrap gap-4 text-sm">
+            <span>© 2023 Talent Flow LLC</span>
+            <a href="/privacy-policy/" class="text-white"> Privacy policy </a>
+            <a href="/terms-of-use/" class="text-white"> Terms of use </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/script.js" id="gun-io-alpine-js"></script>
+    <script
+      src="https://kit.fontawesome.com/4214024a9d.js"
+      id="gun-io-font-awesome-js"
+    ></script>
+  </body>
+</html>
