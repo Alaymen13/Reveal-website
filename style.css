@@ -8,6 +8,9 @@ a.testimo{
   :hover{
     text-decoration:none;
     }
-    .marginR {
-      margin-right: 370px;
+    @media (min-width: 1550px) {
+      .marginR {
+        margin-right: 370px;
+      }
     }
+    
