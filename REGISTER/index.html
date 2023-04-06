@@ -34,6 +34,77 @@
       rel="stylesheet"
       href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
     />
+
+     <!-- Email.js -->
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  
+
+     <script>
+       (function() {
+         emailjs.init("iNzEMNFXHQhOXSO4z"); // Replace with your user ID from EmailJS dashboard
+       })();
+     
+     function showAlert(message) {
+       var alertBox = document.getElementById("alert-box");
+       var alertMessage = document.getElementById("alert-message");
+       var closeBtn = document.getElementById("close-btn");
+       
+       alertMessage.innerHTML = message;
+       alertBox.classList.remove("hidden");
+       
+       closeBtn.addEventListener("click", function() {
+         alertBox.classList.add("hidden");
+       });
+     }
+     function showSuccessMessage(message) {
+  var alertBox = document.getElementById("success-box");
+  var alertMessage = document.getElementById("success-message");
+  
+  alertMessage.innerHTML = message;
+  alertBox.classList.remove("hidden");
+// Automatically remove after 3 seconds
+  setTimeout(function() {
+    alertBox.classList.add("hidden");
+  }, 2000);
+}
+
+     
+     
+      function sendMail() {
+       event.preventDefault(); // Prevent form from submitting
+     
+       // Get form field values
+       var name = document.getElementById("name").value;
+       var email = document.getElementById("email").value;
+       var message = document.getElementById("message").value;
+     
+       // Check if form fields have values
+     
+       if (!name || !email || !message) {
+         showAlert("Please fill out all form fields.");
+         return;
+       }
+     
+     
+       // Replace the placeholders in the email template with actual values
+       var templateParams = {
+         name: name,
+         email: email,
+         message: message,
+       };
+     
+       emailjs.send("service_ajwmxbm", "template_gegm70j", templateParams)
+         .then(function(response) {
+           console.log("SUCCESS!", response.status, response.text);
+           showSuccessMessage("Message sent successfully.");
+           document.getElementById("contact-form").reset(); // Clear form inputs
+         }, function(error) {
+           console.log("FAILED...", error);
+           alert("Message sending failed. Please try again later.");
+         });
+     }
+     </script>
+     
   </head>
   <body
     class="page-template page-template-fullscreen page-template-fullscreen-php page page-id-380 wp-embed-responsive relative bg-[#1a1a1e] text-white"
@@ -148,93 +219,101 @@
         </nav>
       </div>
     </header>
-   
-    <!-- Contact Start -->
-    <div id="contact" class="mp-8 container-fluid py-3 wow fadeInUp" data-wow-delay="0.1s">
-      <div class="container py-3">
-        <div
-          class="section-title text-center position-relative pb-3 mb-5 mx-auto"
-          style="max-width: 600px"
-        >
-          <h5
-            class="fw-bold text-primary text-uppercase text-2xl sm:text-2xl md:text-2xl pb-3"
-          >
-            Contact Us
-          </h5>
-          <h1 class="mb-0 text-2xl sm:text-3xl md:text-4xl">
-           Contact Us Today and Let's Boost Your Social Media Presence!
-          </h1>
-        </div>
-        <div class="row g-5">
-         
-         <div class="col-md-6 wow slideInUp" data-wow-delay="0.3s">
-  <form id="contact-form" >
-    <div class="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center z-50 hidden" id="alert-box">
-  <div class="bg-white rounded-lg shadow-lg p-4">
-    <div class="flex items-center justify-between">
-      <div class="flex items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
-          <path fill-rule="evenodd" d="M18.475 15.595c.43.43.43 1.13 0 1.56-.429.429-1.13.429-1.559 0l-6.895-6.894-6.894 6.895c-.43.429-1.13.429-1.56 0-.429-.43-.429-1.13 0-1.56l6.895-6.895L2.57 3.505c-.429-.429-.429-1.13 0-1.559.429-.429 1.13-.429 1.56 0l6.894 6.895 6.895-6.895c.429-.429 1.13-.429 1.559 0 .43.429.43 1.13 0 1.559L11.038 9.7l6.437 5.895z" clip-rule="evenodd" />
-        </svg>
-        <span class="font-bold text-red-500">Error</span>
-      </div>
-      <button id="close-btn" class="text-gray-400 hover:text-red-500 focus:outline-none">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
-    </div>
-    <div class="mt-4">
-      <p id="alert-message" class="text-gray-600"></p>
-    </div>
-  </div>
-</div>
-
-    <div class="row g-3">
-      <div class="col-md-12">
-        <input
+    <main id="content" class="container">
+      <div class="flex justify-center  h-full">
         
-          type="text"
-          class="form-control border-0 bg-light px-4"
-          placeholder="Your Name"
-          style="height: 55px"
-          id="name"
-          
-        />
-      </div>
-      <div class="col-md-12">
-        <input
-       
-          type="email"
-          class="form-control border-0 bg-light px-4"
-          placeholder="Your Email"
-          style="height: 55px"
-          id="email"
-        />
-      </div>
-      <div class="col-12">
-        <textarea
-          class="form-control border-0 bg-light px-4 py-3"
-          rows="4"
-          placeholder="What would you like to know ?"
-          id="message"
-        ></textarea>
-      </div>
-      <div class="col-12">
-       <button class="btn btn-primary w-100 py-3" type="submit" onclick="sendMail()">
-          Send Message
-        </button>
-
-      </div>
+        <div class=" max-w-md lg:max-w-2xl w-full p-6 rounded-lg shadow-md">
+          <h2 class="text-center text-2xl my-2 mb-6">Register</h2>
+            <form id="contact-form">
+                <div class="grid gap-6 lg:gap-8 mb-6 lg:grid-cols-2">
+                  <div>
+                    <label for="first_name" class="block mb-2 text-sm font-medium text-white dark:text-white">Title</label>
+                    <input type="text" id="name" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 form-control" placeholder="John" required>
+                </div>
+                
+                <div>
+                  <label for="first_name" class="block mb-2 text-sm font-medium text-white dark:text-white">First Name</label>
+                  <input type="text" id="email" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 form-control" placeholder="First Name" required>
+              </div>
+                <div>
+                  <label for="first_name" class="block mb-2 text-sm font-medium text-white dark:text-white">Last Name</label>
+                  <input type="text" id="email" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 form-control" placeholder="Last Name" required>
+              </div>
+                <div>
+                  <label for="first_name" class="block mb-2 text-sm font-medium text-white dark:text-white">Year Experience</label>
+                  <input type="text" id="email" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 form-control" placeholder="5 years" required>
+              </div>
+                <div>
+                  <label for="first_name" class="block mb-2 text-sm font-medium text-white dark:text-white">Your Top Skill</label>
+                  <input type="text" id="email" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 form-control" placeholder="Frontend, Backend, Fullstack, Data analysis" required>
+              </div>
+                <div>
+                  <label for="first_name" class="block mb-2 text-sm font-medium text-white dark:text-white">Country</label>
+                  <input type="text" id="email" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 form-control" placeholder="Country" required>
+              </div>
+                <div>
+                  <label for="first_name" class="block mb-2 text-sm font-medium text-white dark:text-white">Email</label>
+                  <input type="email" id="email" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 form-control" placeholder="example@example.com" required>
+              </div>
+                <div>
+                  <label for="first_name" class="block mb-2 text-sm font-medium text-white dark:text-white">Phone Number</label>
+                  <input type="tel" id="email" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 form-control" placeholder="+1-123-456-7890" required>
+              </div>
+                <div>
+                  <label for="first_name" class="block mb-2 text-sm font-medium text-white dark:text-white">LinkedIn url</label>
+                  <input type="url" id="email" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 form-control" placeholder="https://www.linkedin.com/in/yourprofile" required>
+              </div>
+</div>
+                <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" onclick="sendMail()">Submit</button>
+            </form>
+        </div>
     </div>
-  </form>
-</div>    
+    
+    <!-- Succces box -->
+    <div class="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center z-50 hidden" id="success-box">
+      <div class="bg-green-100 rounded-lg shadow-lg p-4">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center">
+    <span class="font-bold text-green-500">Success</span>
+          </div>
+    
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/>
+    </svg>
+    
+        </div>
+        <div class="mt-4">
+          <p id="success-message" class="text-gray-600">Message sent successfully.</p>
         </div>
       </div>
     </div>
+    
+    <!-- Alert box -->
+    
+    <div class="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center z-50 hidden" id="alert-box">
+      <div class="bg-white rounded-lg shadow-lg p-4">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M18.475 15.595c.43.43.43 1.13 0 1.56-.429.429-1.13.429-1.559 0l-6.895-6.894-6.894 6.895c-.43.429-1.13.429-1.56 0-.429-.43-.429-1.13 0-1.56l6.895-6.895L2.57 3.505c-.429-.429-.429-1.13 0-1.559.429-.429 1.13-.429 1.56 0l6.894 6.895 6.895-6.895c.429-.429 1.13-.429 1.559 0 .43.429.43 1.13 0 1.559L11.038 9.7l6.437 5.895z" clip-rule="evenodd" />
+            </svg>
+            <span class="font-bold text-red-500">Error</span>
+          </div>
+          <button id="close-btn" class="text-gray-400 hover:text-red-500 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="mt-4">
+          <p id="alert-message" class="text-gray-600">Please fill out all form fields.</p>
+        </div>
+      </div>
     </div>
-    <!-- Contact End -->
-  
+    </main>
+    
+
+
       <footer>
         <h2 class="sr-only">Enough qualified technical talent, on tap. </h2>
         <div class="bg-smoke border-t-2 border-black">
