@@ -74,13 +74,18 @@
        event.preventDefault(); // Prevent form from submitting
      
        // Get form field values
-       var name = document.getElementById("name").value;
+       var title = document.getElementById("title").value;
+       var firstName = document.getElementById("firstName").value;
+       var lastName = document.getElementById("lastName").value;
+       var yearExp = document.getElementById("yearExp").value;
+       var topSkill = document.getElementById("topSkill").value;
+       var country = document.getElementById("country").value;
        var email = document.getElementById("email").value;
-       var message = document.getElementById("message").value;
+       var linkedin = document.getElementById("linkedin").value;
      
        // Check if form fields have values
      
-       if (!name || !email || !message) {
+       if (!title || !firstName || !lastName || !yearExp  || !topSkill || !country || !email || !linkedin  ) {
          showAlert("Please fill out all form fields.");
          return;
        }
@@ -88,9 +93,14 @@
      
        // Replace the placeholders in the email template with actual values
        var templateParams = {
-         name: name,
-         email: email,
-         message: message,
+        title: title,
+        firstName: firstName,
+        lastName: lastName,
+        yearExp: yearExp,
+        topSkill: topSkill,
+        country: country,
+        email: email,
+        linkedin: linkedin,
        };
      
        emailjs.send("service_ajwmxbm", "template_gegm70j", templateParams)
@@ -223,46 +233,46 @@
       <div class="flex justify-center  h-full">
         
         <div class=" max-w-md lg:max-w-2xl w-full p-6 rounded-lg shadow-md">
-          <h2 class="text-center text-2xl my-2 mb-6">Register</h2>
+          <h2 class="text-center text-2xl lg:text-3xl my-2 lg:my-4 lg:mb-8">Register for assessment phase</h2>
             <form id="contact-form">
                 <div class="grid gap-6 lg:gap-8 mb-6 lg:grid-cols-2">
                   <div>
-                    <label for="first_name" class="block mb-2 text-sm font-medium text-white dark:text-white">Title</label>
-                    <input type="text" id="name" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 form-control" placeholder="John" required>
+                    <label for="title" class="block mb-2 text-sm font-medium text-white dark:text-white">Title</label>
+                    <input type="text" id="title" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 form-control" placeholder="Title required">
                 </div>
                 
                 <div>
-                  <label for="first_name" class="block mb-2 text-sm font-medium text-white dark:text-white">First Name</label>
-                  <input type="text" id="email" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 form-control" placeholder="First Name" required>
+                  <label for="firstName" class="block mb-2 text-sm font-medium text-white dark:text-white">First Name</label>
+                  <input type="text" id="firstName" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 form-control" placeholder="First Name" required>
               </div>
                 <div>
-                  <label for="first_name" class="block mb-2 text-sm font-medium text-white dark:text-white">Last Name</label>
-                  <input type="text" id="email" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 form-control" placeholder="Last Name" required>
+                  <label for="lastName" class="block mb-2 text-sm font-medium text-white dark:text-white">Last Name</label>
+                  <input type="text" id="lastName" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 form-control" placeholder="Last Name" required>
+              </div>
+               <div>
+                  <label for="yearExp" class="block mb-2 text-sm font-medium text-white dark:text-white">Year Experience</label>
+                  <input type="text" id="yearExp" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 form-control" placeholder="5 years" required>
+              </div>
+                 <div>
+                  <label for="topSkill" class="block mb-2 text-sm font-medium text-white dark:text-white">Your Top Skill</label>
+                  <input type="text" id="topSkill" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 form-control" placeholder="javascript, python,golang, flutter " required>
               </div>
                 <div>
-                  <label for="first_name" class="block mb-2 text-sm font-medium text-white dark:text-white">Year Experience</label>
-                  <input type="text" id="email" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 form-control" placeholder="5 years" required>
+                  <label for="country" class="block mb-2 text-sm font-medium text-white dark:text-white">Country</label>
+                  <input type="text" id="country" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 form-control" placeholder="Country" required>
               </div>
                 <div>
-                  <label for="first_name" class="block mb-2 text-sm font-medium text-white dark:text-white">Your Top Skill</label>
-                  <input type="text" id="email" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 form-control" placeholder="Frontend, Backend, Fullstack, Data analysis" required>
-              </div>
-                <div>
-                  <label for="first_name" class="block mb-2 text-sm font-medium text-white dark:text-white">Country</label>
-                  <input type="text" id="email" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 form-control" placeholder="Country" required>
-              </div>
-                <div>
-                  <label for="first_name" class="block mb-2 text-sm font-medium text-white dark:text-white">Email</label>
+                  <label for="email" class="block mb-2 text-sm font-medium text-white dark:text-white">Email</label>
                   <input type="email" id="email" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 form-control" placeholder="example@example.com" required>
               </div>
                 <div>
-                  <label for="first_name" class="block mb-2 text-sm font-medium text-white dark:text-white">Phone Number</label>
-                  <input type="tel" id="email" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 form-control" placeholder="+1-123-456-7890" required>
+                  <label for="phoneNo" class="block mb-2 text-sm font-medium text-white dark:text-white">Phone Number</label>
+                  <input type="tel" id="phoneNo" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 form-control" placeholder="+1-123-456-7890" required>
               </div>
                 <div>
-                  <label for="first_name" class="block mb-2 text-sm font-medium text-white dark:text-white">LinkedIn url</label>
-                  <input type="url" id="email" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 form-control" placeholder="https://www.linkedin.com/in/yourprofile" required>
-              </div>
+                  <label for="linkedin" class="block mb-2 text-sm font-medium text-white dark:text-white">LinkedIn url</label>
+                  <input type="url" id="linkedin" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 form-control" placeholder="https://www.linkedin.com/in/yourprofile" required>
+              </div> 
 </div>
                 <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" onclick="sendMail()">Submit</button>
             </form>
