@@ -41,7 +41,7 @@
 
      <script>
        (function() {
-         emailjs.init("iNzEMNFXHQhOXSO4z"); // Replace with your user ID from EmailJS dashboard
+         emailjs.init("zq4y-ZbyMxBfLPsYw"); // Replace with your user ID from EmailJS dashboard
        })();
      
      function showAlert(message) {
@@ -103,7 +103,7 @@
         linkedin: linkedin,
        };
      
-       emailjs.send("service_ajwmxbm", "template_gegm70j", templateParams)
+       emailjs.send("service_hgd3934", "template_cxumpia", templateParams)
          .then(function(response) {
            console.log("SUCCESS!", response.status, response.text);
            showSuccessMessage("Message sent successfully.");
@@ -233,7 +233,7 @@
       <div class="flex justify-center  h-full">
         
         <div class=" max-w-md lg:max-w-2xl w-full p-6 rounded-lg shadow-md">
-          <h2 class="text-center text-2xl lg:text-3xl my-2 lg:my-4 lg:mb-8">Register for assessment phase</h2>
+          <h2 class="text-center text-2xl lg:text-3xl my-4 mb-8 lg:my-6 lg:mb-10">Register for assessment phase</h2>
             <form id="contact-form">
                 <div class="grid gap-6 lg:gap-8 mb-6 lg:grid-cols-2">
                   <div>
@@ -274,11 +274,11 @@
                   <input type="url" id="linkedin" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 form-control" placeholder="https://www.linkedin.com/in/yourprofile" required>
               </div> 
 </div>
-                <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" onclick="sendMail()">Submit</button>
+                <button type="submit" class="align-center border-y border-black w-full font-medium text-black p-3 ring-inset hover:bg-indigo-500 hover:border-black hover:text-white hover:no-underline lg:block bg-green  lg:w-auto lg:border-2 lg:px-10 lg:py-3 mt-4 lg:mt-10 m-auto" onclick="sendMail()">Submit</button>
             </form>
         </div>
     </div>
-    
+   
     <!-- Succces box -->
     <div class="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center z-50 hidden" id="success-box">
       <div class="bg-green-100 rounded-lg shadow-lg p-4">
